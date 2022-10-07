@@ -10,12 +10,28 @@ import ProjectsView from "./ProjectsView.vue";
       <img class="gravatar" src="../assets/images/gravatar.jpg" />
     </section>
 
+    <h2 class="warning">⚠️ Website in construction! Come back later 😉</h2>
+
     <SkillsView />
     <ProjectsView />
   </main>
 </template>
 
 <style scoped style="scss">
+@keyframes warning_sign {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1.3;
+  }
+}
+.warning {
+  animation: 3s linear 0s infinite alternate warning_sign;
+  color: #ddaa55;
+  font-size: 3rem;
+  text-align: center;
+}
 .gravatar {
   width: 100px;
 }
