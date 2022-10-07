@@ -1,5 +1,7 @@
-:root {
-  --black: #272727;
-  --color-text: #dddddd;
-  --background-color: var(--black);
-}
+$black: #272727;
+$text-color: #dddddd;
+$background-color: $black;
+
+$primary-color: #55aa55;
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);

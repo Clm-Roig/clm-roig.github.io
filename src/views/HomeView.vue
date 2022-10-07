@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SkillsView from "./SkillsView.vue";
 import ProjectsView from "./ProjectsView.vue";
+import ContactView from "./ContactView.vue";
 </script>
 
 <template>
@@ -15,23 +16,26 @@ import ProjectsView from "./ProjectsView.vue";
 
     <SkillsView />
     <ProjectsView />
-
-    <h1>Title 1</h1>
-    <h2>Title 2</h2>
-    <h3>Title 3</h3>
-    <h4>Title 4</h4>
-    <h5>Title 5</h5>
-    <p>Some text</p>
+    <ContactView />
   </main>
+
+  <footer>
+    <p>Clément ROIG</p>
+    <p class="caption">
+      Website using <a href="https://vuejs.org/">Vue.js framework</a> and
+      <a href="https://sass-lang.com/">SASS (SCSS)</a>
+      only
+    </p>
+  </footer>
 </template>
 
-<style scoped style="scss">
+<style scoped lang="scss">
 @keyframes warning_sign {
   from {
-    scale: 0.9;
+    scale: 0.8;
   }
   to {
-    scale: 1.1;
+    scale: 1;
   }
 }
 .warning {
@@ -57,5 +61,14 @@ h1 {
 }
 h1 > strong {
   display: block;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.caption {
+  font-size: 80%;
 }
 </style>

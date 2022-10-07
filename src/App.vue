@@ -8,4 +8,4 @@ import { RouterLink, RouterView } from "vue-router";
   <RouterView />
 </template>
 
-<style scoped style="scss"></style>
+<style scoped lang="scss"></style>
