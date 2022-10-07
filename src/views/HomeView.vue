@@ -10,26 +10,34 @@ import ProjectsView from "./ProjectsView.vue";
       <img class="gravatar" src="../assets/images/gravatar.jpg" />
     </section>
 
-    <h2 class="warning">⚠️ Website in construction! Come back later 😉</h2>
+    <h2 class="warning">⚠️ Website in construction ⚠️</h2>
+    <h2 class="warning">Come back later!</h2>
 
     <SkillsView />
     <ProjectsView />
+
+    <h1>Title 1</h1>
+    <h2>Title 2</h2>
+    <h3>Title 3</h3>
+    <h4>Title 4</h4>
+    <h5>Title 5</h5>
+    <p>Some text</p>
   </main>
 </template>
 
 <style scoped style="scss">
 @keyframes warning_sign {
   from {
-    scale: 0.7;
+    scale: 0.9;
   }
   to {
-    scale: 1.3;
+    scale: 1.1;
   }
 }
 .warning {
-  animation: 3s linear 0s infinite alternate warning_sign;
+  animation: 2s linear 0s infinite alternate warning_sign;
   color: #ddaa55;
-  font-size: 3rem;
+  line-height: 3rem;
   text-align: center;
 }
 .gravatar {
@@ -44,9 +52,10 @@ import ProjectsView from "./ProjectsView.vue";
 }
 h1 {
   text-align: center;
+  line-height: 3.2rem;
+  margin-bottom: 8px;
 }
 h1 > strong {
   display: block;
-  font-size: 150%;
 }
 </style>
