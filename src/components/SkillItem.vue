@@ -1,6 +1,23 @@
 <script setup lang="ts">
 import type { Skill } from "../models/Skill";
+import { SkillCategories } from "../models/SkillCategories";
 
+const computeCategoryClass = (category: SkillCategories) => {
+  switch (category) {
+    case SkillCategories.BACK_END:
+      return "category-back-end";
+    case SkillCategories.DBMS:
+      return "category-dbms";
+    case SkillCategories.FRONT_END:
+      return "category-front-end";
+    case SkillCategories.MISC:
+      return "category-misc";
+    case SkillCategories.TEST_CI:
+      return "category-test-ci";
+    default:
+      return;
+  }
+};
 defineProps<{
   skill: Skill;
 }>();
@@ -9,6 +26,9 @@ defineProps<{
 <template>
   <li class="skill" :class="'border-' + skill.level">
     <h3>{{ skill.name }}</h3>
+    <p class="category" :class="computeCategoryClass(skill.category)">
+      {{ skill.category }}
+    </p>
     <div class="level">
       <!-- eslint-disable-next-line vue/valid-v-for vue/no-unused-vars -->
       <span v-for="x in skill.level" :key="skill.level">⭐</span>
@@ -33,19 +53,28 @@ $border-radius: 35%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1;
+}
+
+.category {
+  font-size: 75%;
+  font-weight: bold;
+}
+
+.category-back-end {
+  background-color: red;
 }
 
 .skill > h3 {
   font-size: 1.3rem;
-  line-height: 1.6rem;
   text-align: center;
+  padding-top: 16px;
 }
 .skill {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 8px;
   width: 8rem;
   height: 8rem;

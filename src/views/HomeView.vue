@@ -6,17 +6,26 @@ import ContactView from "./ContactView.vue";
 
 <template>
   <main>
-    <section class="wrapper">
+    <div class="texture-bg"></div>
+
+    <div class="top-wrapper">
       <h1><strong>Hi, I'm Clément Roig</strong>I'm a front-end developer!</h1>
       <img class="gravatar" src="../assets/images/gravatar.jpg" />
-    </section>
+    </div>
 
     <h2 class="warning">⚠️ Website in construction ⚠️</h2>
     <h2 class="warning">Come back later!</h2>
 
-    <SkillsView />
-    <ProjectsView />
-    <ContactView />
+    <section class="bg-dark">
+      <SkillsView />
+    </section>
+
+    <section>
+      <ProjectsView />
+    </section>
+    <section class="bg-dark">
+      <ContactView />
+    </section>
   </main>
 
   <footer>
@@ -30,6 +39,24 @@ import ContactView from "./ContactView.vue";
 </template>
 
 <style scoped lang="scss">
+section {
+  padding: 16px 0 16px 0;
+}
+.bg-dark {
+  background-color: $black;
+}
+
+.texture-bg {
+  background: url("../assets/images/texture_green_silver.jpg");
+  background-attachment: fixed;
+  filter: blur(5px) brightness(150%);
+  height: 100vh;
+  opacity: 0.1;
+  overflow: "hidden";
+  position: fixed;
+  width: 100vw;
+}
+
 @keyframes warning_sign {
   from {
     scale: 0.8;
@@ -47,7 +74,7 @@ import ContactView from "./ContactView.vue";
 .gravatar {
   width: 100px;
 }
-.wrapper {
+.top-wrapper {
   align-items: center;
   display: flex;
   flex-direction: column;
