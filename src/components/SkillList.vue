@@ -8,7 +8,7 @@ const state = reactive({
   skills: [...data],
   sortBy: "",
   displayedCategoryNames: [
-    ...Object.values(SkillCategories).map((c) => c.name),
+    ...Object.values(SkillCategories).map((c: SkillCategories) => c.name),
   ],
 });
 
@@ -89,18 +89,18 @@ function resetSortBy() {
   <div class="text-center flex-center">
     <p>Sort by</p>
     <button
-      @click="sortByCategory"
       :class="state.sortBy === 'category' ? 'selected' : ''"
+      @click="sortByCategory"
     >
       Category
     </button>
     <button
-      @click="sortByLevel"
       :class="state.sortBy === 'level' ? 'selected' : ''"
+      @click="sortByLevel"
     >
       Level
     </button>
-    <button @click="resetSortBy" class="outlined">Reset</button>
+    <button class="outlined" @click="resetSortBy">Reset</button>
   </div>
 
   <div class="text-center flex-center categories-filter flex-wrap">
@@ -110,17 +110,17 @@ function resetSortBy() {
     </div>
     <button
       v-for="category in Object.values(SkillCategories)"
-      @click.exact="toggleDisplayCategory(category)"
-      @click.ctrl="displayOnlyCategory(category)"
       :key="category"
       :style="{ 'background-color': category.color }"
       :class="
         state.displayedCategoryNames.includes(category.name) ? 'selected' : ''
       "
+      @click.exact="toggleDisplayCategory(category)"
+      @click.ctrl="displayOnlyCategory(category)"
     >
       {{ category.name }}
     </button>
-    <button @click="displayAllCategories" class="outlined">Display all</button>
+    <button class="outlined" @click="displayAllCategories">Display all</button>
   </div>
 
   <TransitionGroup class="skill-list" tag="ul" :css="false">

@@ -22,7 +22,7 @@ export class SkillCategories {
 
   // private to disallow creating other instances of this type
   private constructor(
-    private readonly name: string,
-    private readonly color: string
+    public readonly name: string,
+    public readonly color: string
   ) {}
 }
