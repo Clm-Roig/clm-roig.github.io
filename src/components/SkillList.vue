@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import data from "./skills.json";
 import type { Skill } from "../models/Skill";
-import SkillItem from "./SkillItem.vue";
-import { ref } from "vue";
+import SkillItem from "./SkillItem/SkillItem.vue";
+import { reactive } from "vue";
 
 const sort = (x1: any, x2: any, field: string) => {
   if (x1[field] < x2[field]) return 1;
@@ -10,18 +10,19 @@ const sort = (x1: any, x2: any, field: string) => {
   return 0;
 };
 
-const skills = ref(data);
+const state = reactive({ skills: [...data] });
 
 function sortByCategory() {
-  skills.value = skills.value.sort((s1, s2) => sort(s1, s2, "category"));
+  state.skills = state.skills.sort((s1, s2) => sort(s1, s2, "category"));
 }
 
 function sortByLevel() {
-  skills.value = skills.value.sort((s1, s2) => sort(s1, s2, "level"));
+  state.skills = state.skills.sort((s1, s2) => sort(s1, s2, "level"));
 }
 
 function reset() {
-  // TODO : reset to initial data
+  console.log(data);
+  state.skills = [...data];
 }
 </script>
 
@@ -30,11 +31,11 @@ function reset() {
     <span>Sort by</span>
     <button @click="sortByCategory">Category</button>
     <button @click="sortByLevel">Level</button>
-    <button @click="reset">Reset</button>
+    <button @click="reset" class="outlined">Reset</button>
   </div>
   <ul class="skill-list">
     <SkillItem
-      v-for="skill in (skills as Skill[])"
+      v-for="skill in (state.skills as Skill[])"
       :key="skill.name"
       :skill="skill"
     />

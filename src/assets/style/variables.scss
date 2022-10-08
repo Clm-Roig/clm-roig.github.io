@@ -1,7 +1,10 @@
 $black: #272727;
-$text-color: #dddddd;
+$white: #eeeeee;
+$text-color: #dedede;
 $background-color: $black;
 
 $primary-color: #55aa55;
 $primary-color-light: lighten($primary-color, 15%);
 $primary-color-dark: darken($primary-color, 15%);
+
+$border-radius: 4px;

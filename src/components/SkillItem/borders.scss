@@ -1,0 +1,93 @@
+$border-width: 2px;
+$border-radius: 35%;
+
+$border-3-before-deg: 45deg;
+$border-4-after-deg: 60deg;
+$border-4-before-deg: 30deg;
+
+@mixin border {
+  border: $border-width solid $primary-color;
+  border-radius: $border-radius;
+}
+
+@mixin additional-border {
+  @include border;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 1;
+}
+
+@keyframes rotating-3-before {
+  from {
+    transform: rotate($border-3-before-deg);
+  }
+  to {
+    transform: rotate(360deg + $border-3-before-deg);
+  }
+}
+
+@keyframes rotating-4-before {
+  from {
+    transform: rotate($border-4-before-deg);
+  }
+  to {
+    transform: rotate(360deg + $border-4-before-deg);
+  }
+}
+
+@keyframes rotating-4-after {
+  from {
+    transform: rotate($border-4-after-deg);
+  }
+  to {
+    transform: rotate(-360deg + $border-4-after-deg);
+  }
+}
+
+.skill:hover.border-3::before {
+  animation: rotating-3-before 2s linear infinite;
+}
+
+.skill:hover.border-4::before {
+  animation: rotating-4-before 2s linear infinite;
+}
+
+.skill:hover.border-4::after {
+  animation: rotating-4-after 2s linear infinite;
+}
+
+.border-1,
+.border-2,
+.border-3,
+.border-4 {
+  @include border;
+}
+
+.border-1 {
+  border-style: dashed;
+}
+
+.border-3::before,
+.border-4::before,
+.border-4::after {
+  @include additional-border;
+}
+
+.border-3::before {
+  transform: rotate($border-3-before-deg);
+  border-color: $primary-color-light;
+}
+
+.border-4::before {
+  transform: rotate($border-4-before-deg);
+  border-color: $primary-color-light;
+}
+
+.border-4::after {
+  transform: rotate($border-4-after-deg);
+  border-color: $primary-color-dark;
+}

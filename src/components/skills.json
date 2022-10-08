@@ -1,13 +1,13 @@
 [
-  { "name": "React", "level": 4, "category": "Front-End" },
-  { "name": "MUI", "level": 4, "category": "Front-End" },
-  { "name": "CSS 3", "level": 3, "category": "Front-End" },
-  { "name": "HTML 5", "level": 3, "category": "Front-End" },
+  { "name": "React", "level": 4, "category": "Front-end" },
+  { "name": "MUI", "level": 4, "category": "Front-end" },
+  { "name": "CSS 3", "level": 3, "category": "Front-end" },
+  { "name": "HTML 5", "level": 3, "category": "Front-end" },
   { "name": "Github Actions", "level": 3, "category": "Test / CI" },
   { "name": "Git", "level": 3, "category": "Misc" },
 
-  { "name": "Vue.js", "level": 1, "category": "Front-End" },
-  { "name": "SCSS", "level": 1, "category": "Front-End" },
+  { "name": "Vue.js", "level": 1, "category": "Front-end" },
+  { "name": "SCSS", "level": 1, "category": "Front-end" },
 
   { "name": "Jest", "level": 3, "category": "Test / CI" },
   { "name": "Cypress", "level": 2, "category": "Test / CI" },

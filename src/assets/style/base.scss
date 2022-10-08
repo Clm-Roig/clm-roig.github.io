@@ -20,6 +20,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Button */
+button {
+  background-color: $primary-color;
+  border: none;
+  border-radius: $border-radius;
+  color: $white;
+  padding: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: $primary-color-dark;
+  box-shadow: 0 2px 0px $text-color;
+  cursor: pointer;
+}
+
+button.outlined {
+  background-color: transparent;
+  border: 1px solid $primary-color-light;
+  color: $primary-color-light;
+}
+
+button.outlined:hover {
+  background-color: $primary-color-dark;
+  box-shadow: 0 2px 0px $text-color;
+  color: $white;
+}
+
 /* Utility class */
 .text-center {
   text-align: center;
