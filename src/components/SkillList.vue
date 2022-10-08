@@ -106,7 +106,6 @@ function resetSortBy() {
   <div class="text-center flex-center categories-filter flex-wrap">
     <div>
       <p>Display</p>
-      <p class="ctrl-tip">Try <b>Ctrl + click</b> ;)</p>
     </div>
     <button
       v-for="category in Object.values(SkillCategories)"
@@ -138,11 +137,8 @@ function resetSortBy() {
 </template>
 
 <style lang="scss">
-.ctrl-tip {
-  font-size: 50%;
-}
-
 .categories-filter {
+  align-items: center;
   margin-top: 8px;
 }
 

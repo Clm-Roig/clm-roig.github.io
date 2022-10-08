@@ -23,32 +23,15 @@ defineProps<{
 @import "./borders.scss";
 
 .category {
-  font-size: 75%;
+  font-size: 70%;
   font-weight: bold;
 }
 
-$opacity: 0.3;
-.category-back-end {
-  background-color: rgba(100, 100, 255, $opacity);
-}
-.category-front-end {
-  background-color: rgba(255, 100, 100, $opacity);
-}
-.category-dbms {
-  background-color: rgba(100, 255, 100, $opacity);
-}
-.category-test-ci {
-  background-color: rgba(255, 255, 50, $opacity);
-}
-.category-misc {
-  background-color: rgba(200, 200, 200, $opacity);
-}
-
 .skill > h3 {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
-  margin-bottom: 16px;
-  padding-top: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 8px;
+  margin-top: 8px;
   text-align: center;
 }
 .skill {
@@ -57,8 +40,8 @@ $opacity: 0.3;
   flex-direction: column;
   justify-content: space-around;
   padding: 8px;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   transition: all 0.3s;
 }
 
@@ -68,6 +51,6 @@ $opacity: 0.3;
 }
 
 .level {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 </style>

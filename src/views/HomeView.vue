@@ -2,19 +2,22 @@
 import SkillsView from "./SkillsView.vue";
 import ProjectsView from "./ProjectsView.vue";
 import ContactView from "./ContactView.vue";
+import AboutView from "./AboutView.vue";
 </script>
 
 <template>
+  <div class="texture-bg"></div>
   <main>
-    <div class="texture-bg"></div>
-
-    <div class="top-wrapper">
-      <h1><strong>Hi, I'm Clément Roig</strong>I'm a front-end developer!</h1>
-      <img class="gravatar" src="../assets/images/gravatar.jpg" />
+    <div class="lateral-left">
+      <a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a>
     </div>
 
-    <h2 class="warning">⚠️ Website in construction ⚠️</h2>
-    <h2 class="warning">Come back later!</h2>
+    <section class="top">
+      <div class="top-text">
+        <h1>Clément Roig</h1>
+      </div>
+      <p class="what-i-am">Web developer · Musician · Nature lover</p>
+    </section>
 
     <section class="bg-dark">
       <SkillsView />
@@ -24,11 +27,14 @@ import ContactView from "./ContactView.vue";
       <ProjectsView />
     </section>
     <section class="bg-dark">
+      <AboutView />
+    </section>
+    <section>
       <ContactView />
     </section>
   </main>
 
-  <footer>
+  <footer class="bg-dark">
     <p>Clément ROIG</p>
     <p class="caption">
       Website using <a href="https://vuejs.org/">Vue.js framework</a> and
@@ -39,8 +45,10 @@ import ContactView from "./ContactView.vue";
 </template>
 
 <style scoped lang="scss">
+$lateral-width: 32px;
+
 section {
-  padding: 16px 0 16px 0;
+  padding: 16px $lateral-width 16px $lateral-width;
 }
 .bg-dark {
   background-color: $black;
@@ -49,10 +57,9 @@ section {
 .texture-bg {
   background: url("../assets/images/texture_green_silver.jpg");
   background-attachment: fixed;
-  filter: blur(5px) brightness(150%);
+  filter: blur(5px) brightness(200%);
   height: 100vh;
   opacity: 0.1;
-  overflow: "hidden";
   position: fixed;
   width: 100vw;
 }
@@ -68,34 +75,59 @@ section {
 .warning {
   animation: 2s linear 0s infinite alternate warning_sign;
   color: #ddaa55;
-  line-height: 3rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 .gravatar {
-  width: 100px;
+  width: 150px;
 }
-.top-wrapper {
+
+.top-text {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
 }
-h1 {
+
+.what-i-am {
+  font-size: 1.5rem;
   text-align: center;
-  line-height: 3.2rem;
-  margin-bottom: 8px;
 }
-h1 > strong {
-  display: block;
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 2.5rem;
+  margin-top: 32px;
+  text-transform: uppercase;
 }
 
 footer {
+  padding: 16px 0;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .caption {
   font-size: 80%;
+}
+
+.lateral-left {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  font-size: 75%;
+  left: 0;
+  width: $lateral-width;
+  writing-mode: vertical-rl;
+  transform: rotateZ(180deg);
+  z-index: 10;
+  &::before {
+    background-color: $primary-color;
+    content: "";
+    display: block;
+    height: 100px;
+    margin-bottom: 8px;
+    width: 2px;
+  }
 }
 </style>
