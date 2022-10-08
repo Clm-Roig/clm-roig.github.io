@@ -1,48 +1,151 @@
 <script setup lang="ts">
-import data from "./skills.json";
-import type { Skill } from "../models/Skill";
+import { skills as data } from "./skills";
+import { SkillCategories } from "../models/SkillCategories";
 import SkillItem from "./SkillItem/SkillItem.vue";
-import { reactive } from "vue";
+import { computed, reactive } from "vue";
 
-const sort = (x1: any, x2: any, field: string) => {
-  if (x1[field] < x2[field]) return 1;
-  if (x1[field] > x2[field]) return -1;
-  return 0;
-};
+const state = reactive({
+  skills: [...data],
+  sortBy: "",
+  displayedCategoryNames: [
+    ...Object.values(SkillCategories).map((c) => c.name),
+  ],
+});
 
-const state = reactive({ skills: [...data] });
+const filteredSkills = computed(() => {
+  let res = [];
+  // filter
+  res = state.skills.filter((s) =>
+    state.displayedCategoryNames.includes(s.category.name)
+  );
+  // sort by
+  if (state.sortBy === "category") {
+    res = res.sort((x1, x2) => {
+      if (x1.category.name > x2.category.name) {
+        return 1;
+      }
+      if (x1.category.name < x2.category.name) {
+        return -1;
+      }
+      return 0;
+    });
+  } else if (state.sortBy === "level") {
+    res = res.sort((x1, x2) => {
+      if (x1.level > x2.level) {
+        return -1;
+      }
+      if (x1.level < x2.level) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+
+  return res;
+});
+
+function displayAllCategories() {
+  state.displayedCategoryNames = [
+    ...Object.values(SkillCategories).map((c) => c.name),
+  ];
+}
+
+function displayOnlyCategory(category: SkillCategories) {
+  state.displayedCategoryNames = [category.name];
+}
+
+function toggleDisplayCategory(category: SkillCategories) {
+  if (state.displayedCategoryNames.includes(category.name)) {
+    state.displayedCategoryNames = state.displayedCategoryNames.filter(
+      (c) => c !== category.name
+    );
+  } else {
+    state.displayedCategoryNames.push(category.name);
+  }
+}
 
 function sortByCategory() {
-  state.skills = state.skills.sort((s1, s2) => sort(s1, s2, "category"));
+  if (state.sortBy === "category") {
+    resetSortBy();
+  } else {
+    state.sortBy = "category";
+  }
 }
 
 function sortByLevel() {
-  state.skills = state.skills.sort((s1, s2) => sort(s1, s2, "level"));
+  if (state.sortBy === "level") {
+    resetSortBy();
+  } else {
+    state.sortBy = "level";
+  }
 }
 
-function reset() {
-  console.log(data);
-  state.skills = [...data];
+function resetSortBy() {
+  state.sortBy = "";
 }
 </script>
 
 <template>
   <div class="text-center flex-center">
-    <span>Sort by</span>
-    <button @click="sortByCategory">Category</button>
-    <button @click="sortByLevel">Level</button>
-    <button @click="reset" class="outlined">Reset</button>
+    <p>Sort by</p>
+    <button
+      @click="sortByCategory"
+      :class="state.sortBy === 'category' ? 'selected' : ''"
+    >
+      Category
+    </button>
+    <button
+      @click="sortByLevel"
+      :class="state.sortBy === 'level' ? 'selected' : ''"
+    >
+      Level
+    </button>
+    <button @click="resetSortBy" class="outlined">Reset</button>
   </div>
-  <ul class="skill-list">
+
+  <div class="text-center flex-center categories-filter flex-wrap">
+    <div>
+      <p>Display</p>
+      <p class="ctrl-tip">Try <b>Ctrl + click</b> ;)</p>
+    </div>
+    <button
+      v-for="category in Object.values(SkillCategories)"
+      @click.exact="toggleDisplayCategory(category)"
+      @click.ctrl="displayOnlyCategory(category)"
+      :key="category"
+      :style="{ 'background-color': category.color }"
+      :class="
+        state.displayedCategoryNames.includes(category.name) ? 'selected' : ''
+      "
+    >
+      {{ category.name }}
+    </button>
+    <button @click="displayAllCategories" class="outlined">Display all</button>
+  </div>
+
+  <TransitionGroup class="skill-list" tag="ul" :css="false">
     <SkillItem
-      v-for="skill in (state.skills as Skill[])"
+      v-for="skill in filteredSkills"
       :key="skill.name"
       :skill="skill"
     />
-  </ul>
+    <div v-if="filteredSkills.length === 0">
+      <p class="text-center">
+        No skills to display :( Try using the filters above ↑
+      </p>
+    </div>
+  </TransitionGroup>
 </template>
 
 <style lang="scss">
+.ctrl-tip {
+  font-size: 50%;
+}
+
+.categories-filter {
+  margin-top: 8px;
+}
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;

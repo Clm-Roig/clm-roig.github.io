@@ -1,23 +1,6 @@
 <script setup lang="ts">
 import type { Skill } from "../../models/Skill";
-import { SkillCategories } from "../../models/SkillCategories";
 
-const computeCategoryClass = (category: SkillCategories) => {
-  switch (category) {
-    case SkillCategories.BACK_END:
-      return "category-back-end";
-    case SkillCategories.DBMS:
-      return "category-dbms";
-    case SkillCategories.FRONT_END:
-      return "category-front-end";
-    case SkillCategories.MISC:
-      return "category-misc";
-    case SkillCategories.TEST_CI:
-      return "category-test-ci";
-    default:
-      return;
-  }
-};
 defineProps<{
   skill: Skill;
 }>();
@@ -26,8 +9,8 @@ defineProps<{
 <template>
   <li class="skill" :class="'border-' + skill.level">
     <h3>{{ skill.name }}</h3>
-    <p class="category" :class="computeCategoryClass(skill.category)">
-      {{ skill.category }}
+    <p class="category" :style="{ 'background-color': skill.category.color }">
+      {{ skill.category.name }}
     </p>
     <div class="level">
       <!-- eslint-disable-next-line vue/valid-v-for vue/no-unused-vars -->
@@ -76,7 +59,7 @@ $opacity: 0.3;
   padding: 8px;
   width: 8rem;
   height: 8rem;
-  transition: 0.4s;
+  transition: all 0.3s;
 }
 
 .skill:hover {
