@@ -46,7 +46,7 @@ defineProps<{
 }
 
 .skill:hover {
-  background: $primary-color-light;
+  background: $primary-color;
   color: $black;
 }
 

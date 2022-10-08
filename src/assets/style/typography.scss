@@ -3,39 +3,42 @@ html {
 }
 
 body {
-  font-family: "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Quicksand", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
+  font-family: "DM Serif Display", serif;
+  font-size: 4rem;
+  text-align: center;
 }
 
 h2 {
+  font-weight: 400;
   font-size: 2rem;
   margin-left: 16px;
   text-transform: uppercase;
   width: fit-content;
+  transform-style: preserve-3d;
   &::before {
-    background-color: $primary-color-light;
-    bottom: 12px;
+    background-color: $secondary-color;
+    bottom: 14px;
     content: "";
     display: block;
-    height: 0.5rem;
+    height: 0.3rem;
     left: 0;
-    opacity: 0.2;
+    opacity: 1;
     position: absolute;
     width: 100%;
     transition: all 0.2s;
+    transform: translateZ(-1px);
   }
 }
 
 h2:hover {
   &::before {
-    background-color: $primary-color-light;
     bottom: 0;
     height: 100%;
-    opacity: 0.5;
   }
 }
 

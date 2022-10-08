@@ -12,6 +12,10 @@ import AboutView from "./AboutView.vue";
       <a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a>
     </div>
 
+    <div class="lateral-right">
+      <a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a>
+    </div>
+
     <section class="top">
       <div class="top-text">
         <h1>Clément Roig</h1>
@@ -19,17 +23,17 @@ import AboutView from "./AboutView.vue";
       <p class="what-i-am">Web developer · Musician · Nature lover</p>
     </section>
 
-    <section class="bg-dark">
+    <section id="skills" class="bg-dark">
       <SkillsView />
     </section>
 
-    <section>
+    <section id="projects">
       <ProjectsView />
     </section>
-    <section class="bg-dark">
+    <section id="about" class="bg-dark">
       <AboutView />
     </section>
-    <section>
+    <section id="contact">
       <ContactView />
     </section>
   </main>
@@ -57,7 +61,7 @@ section {
 .texture-bg {
   background: url("../assets/images/texture_green_silver.jpg");
   background-attachment: fixed;
-  filter: blur(5px) brightness(200%);
+  filter: blur(5px) brightness(110%);
   height: 100vh;
   opacity: 0.1;
   position: fixed;
@@ -90,15 +94,15 @@ section {
 }
 
 .what-i-am {
-  font-size: 1.5rem;
+  font-family: "Quicksand";
+  font-size: 1.25rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 3.6rem;
-  line-height: 2.5rem;
+  line-height: 3.2rem;
   margin-top: 32px;
-  text-transform: uppercase;
 }
 
 footer {
@@ -110,24 +114,42 @@ footer {
   font-size: 80%;
 }
 
-.lateral-left {
+.lateral-left > a,
+.lateral-right > a {
+  color: $white;
+}
+
+.lateral-left,
+.lateral-right {
   display: flex;
   position: fixed;
-  bottom: 0;
   align-items: center;
   font-size: 75%;
-  left: 0;
   width: $lateral-width;
   writing-mode: vertical-rl;
-  transform: rotateZ(180deg);
   z-index: 10;
-  &::before {
-    background-color: $primary-color;
+  &::after {
+    background-color: $white;
     content: "";
     display: block;
-    height: 100px;
-    margin-bottom: 8px;
+    height: 120px;
     width: 2px;
+  }
+}
+.lateral-left {
+  top: 0;
+  left: 0;
+  transform: rotateZ(180deg);
+  &::after {
+    margin-top: 8px;
+  }
+}
+
+.lateral-right {
+  bottom: 0;
+  right: 0;
+  &::after {
+    margin-top: 8px;
   }
 }
 </style>
