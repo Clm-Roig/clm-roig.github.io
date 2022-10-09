@@ -10,6 +10,7 @@ export const skills = [
 
   { name: "Vue.js", level: 1, category: SkillCategories.FRONT_END },
   { name: "SCSS", level: 1, category: SkillCategories.FRONT_END },
+  { name: "BEM", level: 1, category: SkillCategories.FRONT_END },
 
   { name: "Jest", level: 3, category: SkillCategories.TEST_CI },
   { name: "Cypress", level: 2, category: SkillCategories.TEST_CI },

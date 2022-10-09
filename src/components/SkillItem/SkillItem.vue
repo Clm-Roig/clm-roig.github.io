@@ -17,7 +17,7 @@ defineProps<{
     </p>
     <div class="skill__level">
       <!-- eslint-disable-next-line vue/valid-v-for vue/no-unused-vars -->
-      <span v-for="x in skill.level" :key="skill.level">⭐</span>
+      <span v-for="x in skill.level" :key="skill.level">★</span>
     </div>
   </li>
 </template>
@@ -54,6 +54,7 @@ defineProps<{
 
   &__level {
     font-size: 0.5rem;
+    color: $secondary-color;
   }
 }
 
