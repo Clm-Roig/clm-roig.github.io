@@ -49,7 +49,7 @@ import AboutView from "./AboutView.vue";
 </template>
 
 <style scoped lang="scss">
-$lateral-width: 32px;
+$lateral-width: 24px;
 
 section {
   padding: 16px $lateral-width 16px $lateral-width;
@@ -86,6 +86,10 @@ section {
   width: 150px;
 }
 
+.top {
+  padding: 3rem;
+}
+
 .top-text {
   align-items: center;
   display: flex;
@@ -94,15 +98,27 @@ section {
 }
 
 .what-i-am {
+  animation: slide-from-bottom 1s normal ease-in-out;
   font-family: "Quicksand";
   font-size: 1.25rem;
   text-align: center;
   text-transform: uppercase;
 }
 
+@keyframes slide-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h1 {
   line-height: 3.2rem;
-  margin-top: 32px;
+  animation: slide-from-bottom 1s normal ease-in-out;
 }
 
 footer {
@@ -117,6 +133,11 @@ footer {
 .lateral-left > a,
 .lateral-right > a {
   color: $white;
+}
+
+.lateral-left > a:hover,
+.lateral-right > a:hover {
+  color: $black;
 }
 
 .lateral-left,

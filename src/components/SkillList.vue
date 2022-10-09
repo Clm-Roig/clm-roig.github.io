@@ -151,6 +151,6 @@ function resetSortBy() {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  padding: 1rem;
+  padding: 32px;
 }
 </style>
