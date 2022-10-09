@@ -8,29 +8,31 @@ import AboutView from "./AboutView.vue";
 <template>
   <div class="texture-bg"></div>
   <main>
-    <div class="lateral-left">
-      <a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a>
+    <div class="side-bar side-bar--left">
+      <a class="side-bar__a" href="mailto:clm.roig@gmail.com"
+        >clm.roig@gmail.com</a
+      >
     </div>
 
-    <div class="lateral-right">
-      <a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a>
+    <div class="side-bar side-bar--right">
+      <a class="side-bar__a" href="mailto:clm.roig@gmail.com"
+        >clm.roig@gmail.com</a
+      >
     </div>
 
-    <section class="top">
-      <div class="top-text">
-        <h1>Clément Roig</h1>
-      </div>
-      <p class="what-i-am">Web developer · Musician · Nature lover</p>
-    </section>
+    <header class="header">
+      <h1 class="header__h1">Clément Roig</h1>
+      <p class="header__what-i-am">Web developer · Musician · Nature lover</p>
+    </header>
 
-    <section id="skills" class="bg-dark">
+    <section id="skills" class="section--bg-dark">
       <SkillsView />
     </section>
 
     <section id="projects">
       <ProjectsView />
     </section>
-    <section id="about" class="bg-dark">
+    <section id="about" class="section--bg-dark">
       <AboutView />
     </section>
     <section id="contact">
@@ -38,9 +40,9 @@ import AboutView from "./AboutView.vue";
     </section>
   </main>
 
-  <footer class="bg-dark">
+  <footer class="footer section--bg-dark">
     <p>Clément ROIG</p>
-    <p class="caption">
+    <p class="footer__caption">
       Website using <a href="https://vuejs.org/">Vue.js framework</a> and
       <a href="https://sass-lang.com/">SASS (SCSS)</a>
       only
@@ -51,10 +53,21 @@ import AboutView from "./AboutView.vue";
 <style scoped lang="scss">
 $lateral-width: 24px;
 
+@keyframes slide-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 section {
   padding: 16px $lateral-width 16px $lateral-width;
 }
-.bg-dark {
+.section--bg-dark {
   background-color: $black;
 }
 
@@ -68,80 +81,30 @@ section {
   width: 100vw;
 }
 
-@keyframes warning_sign {
-  from {
-    scale: 0.8;
-  }
-  to {
-    scale: 1;
-  }
-}
-.warning {
-  animation: 2s linear 0s infinite alternate warning_sign;
-  color: #ddaa55;
-  font-size: 1.8rem;
-  text-align: center;
-}
-.gravatar {
-  width: 150px;
-}
-
-.top {
+.header {
   padding: 3rem;
-}
-
-.top-text {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.what-i-am {
-  animation: slide-from-bottom 1s normal ease-in-out;
-  font-family: "Quicksand";
-  font-size: 1.25rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@keyframes slide-from-bottom {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+  &__what-i-am {
+    animation: slide-from-bottom 1s normal ease-in-out;
+    font-family: "Quicksand";
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  &__h1 {
+    line-height: 3.2rem;
+    animation: slide-from-bottom 1s normal ease-in-out;
   }
 }
 
-h1 {
-  line-height: 3.2rem;
-  animation: slide-from-bottom 1s normal ease-in-out;
-}
-
-footer {
+.footer {
   padding: 16px 0;
   text-align: center;
+  &__caption {
+    font-size: 80%;
+  }
 }
 
-.caption {
-  font-size: 80%;
-}
-
-.lateral-left > a,
-.lateral-right > a {
-  color: $white;
-}
-
-.lateral-left > a:hover,
-.lateral-right > a:hover {
-  color: $black;
-}
-
-.lateral-left,
-.lateral-right {
+.side-bar {
   display: flex;
   position: fixed;
   align-items: center;
@@ -156,21 +119,30 @@ footer {
     height: 120px;
     width: 2px;
   }
-}
-.lateral-left {
-  top: 0;
-  left: 0;
-  transform: rotateZ(180deg);
-  &::after {
-    margin-top: 8px;
-  }
-}
 
-.lateral-right {
-  bottom: 0;
-  right: 0;
-  &::after {
-    margin-top: 8px;
+  &__a {
+    color: $white;
+  }
+
+  &__a:hover {
+    color: $black;
+  }
+
+  &--left {
+    top: 0;
+    left: 0;
+    transform: rotateZ(180deg);
+    &::after {
+      margin-top: 8px;
+    }
+  }
+
+  &--right {
+    bottom: 0;
+    right: 0;
+    &::after {
+      margin-top: 8px;
+    }
   }
 }
 </style>

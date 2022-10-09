@@ -24,13 +24,13 @@ button.selected {
   }
 }
 
-button.outlined {
+button.btn--outlined {
   background-color: transparent;
   color: $white;
   border: 1px solid $white;
 }
 
-button.outlined:hover {
+button.btn--outlined:hover {
   border-color: $primary-color;
   color: $primary-color;
 }

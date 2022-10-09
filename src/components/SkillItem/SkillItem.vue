@@ -8,38 +8,23 @@ defineProps<{
 
 <template>
   <li class="skill" :class="'border-' + skill.level">
-    <h3>{{ skill.name }}</h3>
+    <h3 class="skill__h3">{{ skill.name }}</h3>
     <p
-      class="category"
+      class="skill__category"
       :style="{ 'text-decoration-color': skill.category.color }"
     >
       {{ skill.category.name }}
     </p>
-    <div class="level">
+    <div class="skill__level">
       <!-- eslint-disable-next-line vue/valid-v-for vue/no-unused-vars -->
       <span v-for="x in skill.level" :key="skill.level">⭐</span>
     </div>
   </li>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./borders.scss";
 
-.category {
-  font-family: "DM Serif display";
-  font-size: 70%;
-  padding: 0.05rem;
-  text-decoration: underline overline 2px;
-  text-underline-offset: 4px;
-}
-
-.skill > h3 {
-  font-size: 1rem;
-  line-height: 1rem;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  text-align: center;
-}
 .skill {
   align-items: center;
   color: $white;
@@ -50,14 +35,30 @@ defineProps<{
   width: 6rem;
   height: 6rem;
   transition: all 0.3s;
+
+  &__h3 {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  &__category {
+    font-family: "DM Serif display";
+    font-size: 70%;
+    padding: 0.05rem;
+    text-decoration: underline overline 2px;
+    text-underline-offset: 4px;
+  }
+
+  &__level {
+    font-size: 0.5rem;
+  }
 }
 
 .skill:hover {
   background: $primary-color;
   color: $black;
-}
-
-.level {
-  font-size: 0.5rem;
 }
 </style>

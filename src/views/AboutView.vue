@@ -2,17 +2,7 @@
 
 <template>
   <h2>About me</h2>
-  <div
-    style="
-      width: 100%;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    "
-  >
-    PLACEHOLDER TEXT
-  </div>
+  <div class="placeholder-block">PLACEHOLDER BLOCK</div>
 </template>
 
 <style scoped lang="scss"></style>
