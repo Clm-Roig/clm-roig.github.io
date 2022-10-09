@@ -1,46 +1,25 @@
-# portfolio
+# Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+<div align="center">
+  <img width="100" src="https://user-images.githubusercontent.com/20704943/194746438-251323e0-64c0-479c-b558-d353532ea640.jpg"/>
+  <h1>Clément ROIG portfolio website - Web developer</h1>  
+</div>
 
-## Recommended IDE Setup
+## Main development scripts
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- `npm install`
+- `npm run dev`
 
-## Type Support for `.vue` Imports in TS
+See [Development guide](https://github.com/Clm-Roig/clm-roig.github.io/wiki/Development-guide) for more info.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Deployment
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+The `main` branch is automatically deployed using a Github Action.
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
+## This project uses
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+![vue logo](https://user-images.githubusercontent.com/20704943/194746416-547ba9ed-6433-44ac-92c1-3b048938fa2d.png)
+![typescript](https://user-images.githubusercontent.com/20704943/194746343-925ef51d-848a-440a-83b8-63545f34fde9.png)
+![eslint](https://user-images.githubusercontent.com/20704943/194746353-929d496e-b8bf-4800-b8c7-f8bcc8f354e4.png)
+![prettier](https://user-images.githubusercontent.com/20704943/194746355-e9b92cd1-10fa-43e8-9ca9-d61cf9352944.png)
