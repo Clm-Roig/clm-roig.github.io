@@ -100,12 +100,12 @@ function resetSortBy() {
     >
       Level
     </button>
-    <button class="text" @click="resetSortBy">Reset</button>
+    <button class="outlined" @click="resetSortBy">Reset</button>
   </div>
 
   <div class="text-center flex-center categories-filter flex-wrap">
     <div>
-      <p>Display</p>
+      <p>Categories</p>
     </div>
     <button
       v-for="category in Object.values(SkillCategories)"
@@ -143,7 +143,6 @@ function resetSortBy() {
 }
 
 .categories-filter {
-  align-items: center;
   margin-top: 8px;
 }
 

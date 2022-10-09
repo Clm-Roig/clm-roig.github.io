@@ -14,7 +14,7 @@ export const skills = [
   { name: "Jest", level: 3, category: SkillCategories.TEST_CI },
   { name: "Cypress", level: 2, category: SkillCategories.TEST_CI },
 
-  { name: "Sails.js", level: 2, category: SkillCategories.BACK_END },
+  { name: "Sails.js", level: 3, category: SkillCategories.BACK_END },
   { name: "Node.js", level: 1, category: SkillCategories.BACK_END },
 
   { name: "Postgres", level: 3, category: SkillCategories.DBMS },

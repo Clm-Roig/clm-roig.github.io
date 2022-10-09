@@ -9,7 +9,10 @@ defineProps<{
 <template>
   <li class="skill" :class="'border-' + skill.level">
     <h3>{{ skill.name }}</h3>
-    <p class="category" :style="{ 'background-color': skill.category.color }">
+    <p
+      class="category"
+      :style="{ 'text-decoration-color': skill.category.color }"
+    >
       {{ skill.category.name }}
     </p>
     <div class="level">
@@ -23,8 +26,11 @@ defineProps<{
 @import "./borders.scss";
 
 .category {
+  font-family: "DM Serif display";
   font-size: 70%;
-  font-weight: bold;
+  padding: 0.05rem;
+  text-decoration: underline overline 2px;
+  text-underline-offset: 4px;
 }
 
 .skill > h3 {
@@ -36,6 +42,7 @@ defineProps<{
 }
 .skill {
   align-items: center;
+  color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

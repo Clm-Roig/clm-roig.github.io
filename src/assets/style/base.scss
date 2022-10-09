@@ -46,26 +46,15 @@ button.selected {
   }
 }
 
-button.text {
+button.outlined {
   background-color: transparent;
   color: $white;
   border: 1px solid $white;
 }
 
-button.text:hover {
+button.outlined:hover {
   border-color: $primary-color;
   color: $primary-color;
-}
-
-button.outlined {
-  background-color: transparent;
-  border: 1px solid $primary-color-light;
-  color: $primary-color-light;
-}
-
-button.outlined:hover {
-  color: $white;
-  border-color: $white;
 }
 
 /* Utility class */

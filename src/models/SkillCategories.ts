@@ -1,24 +1,9 @@
 export class SkillCategories {
-  static readonly BACK_END = new SkillCategories(
-    "Back-end",
-    "rgba(100, 100, 255, 0.3)"
-  );
-  static readonly DBMS = new SkillCategories(
-    "DBMS",
-    "rgba(100, 255, 100, 0.3)"
-  );
-  static readonly FRONT_END = new SkillCategories(
-    "Front-end",
-    "rgba(255, 100, 100, 0.3)"
-  );
-  static readonly MISC = new SkillCategories(
-    "Misc",
-    "rgba(200, 200, 200, 0.3)"
-  );
-  static readonly TEST_CI = new SkillCategories(
-    "Test / CI",
-    "rgba(255, 255, 50, 0.3)"
-  );
+  static readonly BACK_END = new SkillCategories("Back-end", "#132053");
+  static readonly DBMS = new SkillCategories("DBMS", "#14524F");
+  static readonly FRONT_END = new SkillCategories("Front-end", "#5D1309");
+  static readonly MISC = new SkillCategories("Misc", "#333333");
+  static readonly TEST_CI = new SkillCategories("Test / CI", "#663F00");
 
   // private to disallow creating other instances of this type
   private constructor(
