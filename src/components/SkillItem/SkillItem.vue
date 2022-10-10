@@ -34,7 +34,7 @@ defineProps<{
   padding: 8px;
   width: 6rem;
   height: 6rem;
-  transition: all 0.3s;
+  transition: all 0.5s;
 
   &__h3 {
     font-size: 1rem;
@@ -60,6 +60,8 @@ defineProps<{
 
 .skill:hover {
   background: $primary-color;
+
   color: $black;
+  scale: 1.15;
 }
 </style>
