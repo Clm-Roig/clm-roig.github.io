@@ -15,9 +15,28 @@ import AboutView from "./AboutView.vue";
     </div>
 
     <div class="side-bar side-bar--right">
-      <a class="side-bar__a" href="mailto:clm.roig@gmail.com"
-        >clm.roig@gmail.com</a
+      <a
+        class="side-bar__a"
+        href="https://github.com/clm-roig/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
+        <font-awesome-icon
+          class="side-bar__icons"
+          :icon="['fa-brands', 'fa-github']"
+        ></font-awesome-icon>
+      </a>
+      <a
+        class="side-bar__a"
+        href="https://www.linkedin.com/in/clm-roig/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <font-awesome-icon
+          class="side-bar__icons"
+          :icon="['fa-brands', 'fa-linkedin']"
+        ></font-awesome-icon>
+      </a>
     </div>
 
     <header class="header">
@@ -125,7 +144,8 @@ section {
   }
 
   &__a:hover {
-    color: $black;
+    color: $primary-color;
+    background-color: inherit;
   }
 
   &--left {
@@ -143,6 +163,11 @@ section {
     &::after {
       margin-top: 8px;
     }
+  }
+
+  &__icons {
+    font-size: 24px;
+    margin: 8px 0;
   }
 }
 </style>
