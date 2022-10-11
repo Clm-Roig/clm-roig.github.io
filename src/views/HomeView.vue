@@ -70,7 +70,7 @@ import AboutView from "./AboutView.vue";
 </template>
 
 <style scoped lang="scss">
-$lateral-width: 24px;
+$side-bar-width: 28px;
 
 @keyframes slide-from-bottom {
   from {
@@ -84,7 +84,7 @@ $lateral-width: 24px;
 }
 
 section {
-  padding: 16px $lateral-width 16px $lateral-width;
+  padding: 16px $side-bar-width 16px $side-bar-width;
 }
 .section--bg-dark {
   background-color: $black;
@@ -124,11 +124,12 @@ section {
 }
 
 .side-bar {
-  display: flex;
-  position: fixed;
   align-items: center;
+  display: flex;
   font-size: 75%;
-  width: $lateral-width;
+  padding-left: 4px;
+  position: fixed;
+  width: $side-bar-width;
   writing-mode: vertical-rl;
   z-index: 10;
   &::after {
@@ -149,8 +150,8 @@ section {
   }
 
   &--left {
-    top: 0;
     left: 0;
+    top: 0;
     transform: rotateZ(180deg);
     &::after {
       margin-top: 8px;

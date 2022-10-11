@@ -31,21 +31,36 @@ defineProps<{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 8px;
-  width: 6rem;
-  height: 6rem;
+  padding: 4px;
+  width: 6.2rem;
+  height: 6.2rem;
   transition: all 0.5s;
+
+  @media screen and (max-width: 600px) {
+    width: 6rem;
+    height: 6rem;
+  }
+  @media screen and (max-width: 440px) {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
 
   &__h3 {
     font-size: 1rem;
     line-height: 1rem;
     margin-bottom: 8px;
-    margin-top: 8px;
+    margin-top: 20px;
     text-align: center;
+    @media screen and (max-width: 600px) {
+      font-size: 0.85rem;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 0.75rem;
+    }
   }
 
   &__category {
-    font-family: "DM Serif display";
+    font-family: "Frank Ruhl Libre";
     font-size: 70%;
     padding: 0.05rem;
     text-decoration: underline overline 2px;
@@ -60,7 +75,6 @@ defineProps<{
 
 .skill:hover {
   background: $primary-color;
-
   color: $black;
   scale: 1.15;
 }
