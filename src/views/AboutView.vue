@@ -2,7 +2,20 @@
 
 <template>
   <h2>About me</h2>
-  <div class="placeholder-block">PLACEHOLDER BLOCK</div>
+  <div class="wrapper">
+    <img class="gravatar" src="../assets/images/gravatar_no_bg.png" />
+    <p>Hi, I'm Clément Roig!</p>
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.gravatar {
+  width: 200px;
+  height: auto;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+</style>
