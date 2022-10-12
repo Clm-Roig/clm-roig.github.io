@@ -31,7 +31,7 @@
 .timeline {
   display: flex;
   margin: 0 auto;
-  padding: 32px 1rem;
+  padding: 16px 1rem;
   position: relative;
   max-width: 1000px;
   /* Right arrow */

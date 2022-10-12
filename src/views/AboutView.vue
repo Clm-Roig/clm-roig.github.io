@@ -43,6 +43,7 @@ import TimelineComponent from "../components/Timeline/TimelineComponent.vue";
       >. You will also find me hiking in the Ariège Pyrenees (South of France),
       picking mushrooms or chestnuts.
     </p>
+    <img class="forest-picture" src="/src/assets/images/forest.jpg" />
   </div>
 </template>
 
@@ -57,9 +58,6 @@ import TimelineComponent from "../components/Timeline/TimelineComponent.vue";
   }
 
   &__caption {
-    background-color: transparentize($black, 0.3);
-    bottom: 32px;
-    margin-bottom: -20px; /* remove empty space remaining after moving the block */
     position: relative;
   }
 }
@@ -69,10 +67,17 @@ import TimelineComponent from "../components/Timeline/TimelineComponent.vue";
   max-width: 1000px;
   &__text {
     text-indent: 2rem;
-    margin-top: 16px;
   }
   &__text:first-child {
     margin-top: 0;
   }
+}
+
+.forest-picture {
+  display: block;
+  height: auto;
+  margin: auto;
+  margin-top: 16px;
+  width: 100%;
 }
 </style>
