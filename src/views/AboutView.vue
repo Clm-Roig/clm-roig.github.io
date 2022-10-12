@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import gravatar from "@/assets/images/gravatar_no_bg.png";
 import TimelineComponent from "../components/Timeline/TimelineComponent.vue";
 </script>
 
 <template>
   <h2>About me</h2>
   <figure class="portrait">
-    <img class="portrait__gravatar" :src="gravatar" />
+    <img
+      class="portrait__gravatar"
+      src="/src/assets/images/gravatar_no_bg.png"
+    />
     <figcaption class="portrait__caption">
       Hi, I'm <b>Clément Roig</b>!
     </figcaption>
