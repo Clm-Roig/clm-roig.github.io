@@ -102,7 +102,7 @@ section {
 }
 
 .texture-bg {
-  background: url("../assets/images/texture_green_silver.jpg");
+  background: url("@/assets/images/texture_green_silver.jpg");
   background-attachment: fixed;
   filter: blur(5px) brightness(110%);
   height: 100vh;

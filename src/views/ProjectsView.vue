@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import texture from "../assets/images/texture_green_silver.jpg";
+import texture from "@/assets/images/texture_green_silver.jpg";
 </script>
 
 <template>
