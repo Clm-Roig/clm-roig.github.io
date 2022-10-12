@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import gravatar from "@/assets/images/texture_green_silver.jpg";
+import gravatar from "@/assets/images/gravatar_no_bg.png";
+import TimelineComponent from "../components/Timeline/TimelineComponent.vue";
 </script>
 
 <template>
   <h2>About me</h2>
   <figure class="portrait">
     <img class="portrait__gravatar" :src="gravatar" />
-    <figcaption class="portrait__caption">Hi, I'm Clément Roig!</figcaption>
+    <figcaption class="portrait__caption">
+      Hi, I'm <b>Clément Roig</b>!
+    </figcaption>
   </figure>
 
   <div class="about-me">
@@ -15,10 +18,14 @@ import gravatar from "@/assets/images/texture_green_silver.jpg";
       <b
         >user-friendly and beautiful web interfaces but also useful and
         practical REST API for other developers</b
-      >. I am constantly learning and improving my self to enhance my code
-      quality: refactoring, reducing repetitions, testing and documenting my
-      code is a <u>core part of my workflow</u>.
+      >. I have graduated in <b>computer science engineering</b> in 2019. I am
+      constantly learning and improving my self to enhance my code quality:
+      refactoring, reducing repetitions, testing and documenting my code is a
+      <u>core part of my workflow</u>.
     </p>
+
+    <TimelineComponent />
+
     <p class="about-me__text">
       I am thriving by developing solution for meaningful organizations, which
       work on fields like
@@ -49,16 +56,17 @@ import gravatar from "@/assets/images/texture_green_silver.jpg";
 
   &__caption {
     background-color: transparentize($black, 0.3);
-    bottom: 40px;
-    left: 40px;
+    bottom: 32px;
     margin-bottom: -20px; /* remove empty space remaining after moving the block */
     position: relative;
   }
 }
 
 .about-me {
+  margin: auto;
+  max-width: 1000px;
   &__text {
-    text-indent: 16px;
+    text-indent: 2rem;
     margin-top: 16px;
   }
   &__text:first-child {

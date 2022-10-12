@@ -1,0 +1,143 @@
+<script setup lang="ts"></script>
+
+<template>
+  <div class="timeline">
+    <div class="timeline-event">
+      <div class="timeline-event__content">
+        <p class="timeline-event__year">2016</p>
+        <p class="timeline-event__title">CS D.U.T</p>
+      </div>
+    </div>
+    <div class="timeline-event">
+      <div class="timeline-event__content timeline-event__content--bottom">
+        <p class="timeline-event__year">2019</p>
+        <p class="timeline-event__title">CS Engineer Degree</p>
+      </div>
+    </div>
+    <div class="timeline-event">
+      <div class="timeline-event__content">
+        <p class="timeline-event__year">2019</p>
+        <p class="timeline-event__title">Developer Freelance</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  padding: 32px 1rem;
+  position: relative;
+  max-width: 1000px;
+  /* Right arrow */
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 16px solid $primary-color;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  /* Horizontal line */
+  &:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 50%;
+    height: 4px;
+    background: $primary-color;
+    border-radius: 3px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+}
+
+.timeline-event {
+  display: inline-block;
+  flex: 1;
+  height: 70px;
+  margin: 0 0 50px 0;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  &:not(:first-child) {
+    margin-left: -20px;
+  }
+  &:not(:last-child) {
+    margin-right: -20px;
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100% + 26px);
+    left: 50%;
+    background: $primary-color-light;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  /* Event triangle */
+  &__content:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 20px solid $white;
+    transform: translateX(-50%);
+  }
+  /* Bottom event triangle */
+  &__content--bottom:after {
+    top: -20px;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: none;
+    border-bottom: 20px solid $white;
+  }
+
+  &:nth-child(even) {
+    margin-top: 140px;
+    margin-bottom: 0;
+  }
+
+  /* Bottom event point */
+  &:nth-child(even):before {
+    top: auto;
+    bottom: calc(100% + 26px);
+  }
+
+  &__content {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0.5rem;
+    width: fit-content;
+  }
+  &__title {
+    color: $black;
+    font-size: 0.8rem;
+  }
+  &__year {
+    color: $black;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+}
+</style>
