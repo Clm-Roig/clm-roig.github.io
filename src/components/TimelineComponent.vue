@@ -17,7 +17,7 @@
     <div class="timeline-event">
       <div class="timeline-event__content">
         <p class="timeline-event__year">2019</p>
-        <p class="timeline-event__title">Developer Freelance</p>
+        <p class="timeline-event__title">Freelance Developer</p>
       </div>
     </div>
   </div>
