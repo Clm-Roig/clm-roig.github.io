@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Skill } from "../../models/Skill";
+import type { Skill } from "../models/Skill";
 
 defineProps<{
   skill: Skill;
@@ -23,7 +23,7 @@ defineProps<{
 </template>
 
 <style lang="scss" scoped>
-@import "./borders.scss";
+@import "../assets/styles/components/skill-item-borders.scss";
 
 .skill {
   align-items: center;

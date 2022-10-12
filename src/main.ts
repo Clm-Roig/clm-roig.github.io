@@ -6,7 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import "./assets/style/main.scss";
+import "./assets/styles/main.scss";
 
 const app = createApp(App).component("font-awesome-icon", FontAwesomeIcon);
 library.add(faGithub, faLinkedin);

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TimelineComponent from "../components/Timeline/TimelineComponent.vue";
+import TimelineComponent from "../components/TimelineComponent.vue";
 </script>
 
 <template>

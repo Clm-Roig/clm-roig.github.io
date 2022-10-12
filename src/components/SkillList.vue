@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { skills as data } from "./skills";
+import { skills as data } from "../models/skills";
 import { SkillCategories } from "../models/SkillCategories";
-import SkillItem from "./SkillItem/SkillItem.vue";
+import SkillItem from "./SkillItem.vue";
 import { reactive } from "vue";
 
 const state = reactive({
