@@ -72,10 +72,21 @@ import AboutView from "./AboutView.vue";
 <style scoped lang="scss">
 $side-bar-width: 28px;
 
+@keyframes slide-side-bar-left-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) rotateZ(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateZ(180deg);
+  }
+}
+
 @keyframes slide-from-bottom {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -147,9 +158,11 @@ section {
   &__a:hover {
     color: $primary-color;
     background-color: inherit;
+    transform: translateX(-8px);
   }
 
   &--left {
+    animation: slide-side-bar-left-from-top 1s normal ease-in-out;
     left: 0;
     top: 0;
     transform: rotateZ(180deg);
@@ -159,6 +172,7 @@ section {
   }
 
   &--right {
+    animation: slide-from-bottom 1s normal ease-in-out;
     bottom: 0;
     right: 0;
     &::after {
