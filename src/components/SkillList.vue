@@ -27,11 +27,26 @@ const state = reactive({
         />
       </ul>
     </div>
+    <ul class="legend">
+      <li class="legend__level legend__level--1">
+        <span>★</span> = {{ $t("skills.level-1") }}
+      </li>
+      <li class="legend__level legend__level--2">
+        <span>★★</span> = {{ $t("skills.level-2") }}
+      </li>
+      <li class="legend__level legend__level--3">
+        <span>★★★</span> = {{ $t("skills.level-3") }}
+      </li>
+      <li class="legend__level legend__level--4">
+        <span>★★★★</span> = {{ $t("skills.level-4") }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <style lang="scss" scoped>
 $breakpoint: 940px;
+$second-breakpoint: 620px;
 .wrapper {
   display: flex;
   gap: 16px;
@@ -67,6 +82,49 @@ $breakpoint: 940px;
       flex-direction: row;
       justify-content: space-evenxly;
     }
+  }
+}
+
+.legend {
+  bottom: 25%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  & span {
+    color: $secondary-color;
+  }
+  @media screen and (max-width: $breakpoint) {
+    &__level {
+      flex: 1 50%;
+      min-width: 200px;
+    }
+    &__level--1 {
+      order: 1;
+    }
+    &__level--2 {
+      order: 3;
+    }
+    &__level--3 {
+      order: 2;
+    }
+    &__level--4 {
+      order: 4;
+    }
+  }
+  @media screen and (max-width: $second-breakpoint) {
+    &__level {
+      flex-basis: 100%;
+      order: initial;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: static;
+    transform: translateX(0);
   }
 }
 </style>

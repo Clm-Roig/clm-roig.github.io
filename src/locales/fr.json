@@ -3,7 +3,11 @@
     "whatIAm": "Développeur web · Musicien · Amoureux de la nature"
   },
   "skills": {
-    "section-title": "Compétences"
+    "section-title": "Compétences",
+    "level-1": "novice",
+    "level-2": "connaissances basiques",
+    "level-3": "connaissances confirmées",
+    "level-4": "connaissances poussées"
   },
   "Back-end": "Back-end",
   "Front-end": "Front-end",

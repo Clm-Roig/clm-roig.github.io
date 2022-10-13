@@ -3,7 +3,11 @@
     "whatIAm": "Web developer · Musician · Nature lover"
   },
   "skills": {
-    "section-title": "Skills"
+    "section-title": "Skills",
+    "level-1": "novice",
+    "level-2": "basic knowledge",
+    "level-3": "confirmed knowledge",
+    "level-4": "advanced knowledge"
   },
   "Back-end": "Back-end",
   "Front-end": "Front-end",
