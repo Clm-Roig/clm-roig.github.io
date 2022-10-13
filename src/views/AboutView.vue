@@ -23,11 +23,12 @@ import TimelineComponent from "../components/TimelineComponent.vue";
 
     <TimelineComponent />
 
-    <!-- eslint-disable-next-line vue/no-v-html -->
-    <p class="about-me__text" v-html="$t('about.part2')"></p>
-    <!-- eslint-disable-next-line vue/no-v-html -->
-    <p class="about-me__text" v-html="$t('about.part3')"></p>
-
+    <div class="about-me__block-2">
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <p class="about-me__text" v-html="$t('about.part2')"></p>
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <p class="about-me__text" v-html="$t('about.part3')"></p>
+    </div>
     <img class="forest-picture" src="/src/assets/images/forest.jpg" />
   </div>
 </template>
@@ -50,12 +51,18 @@ import TimelineComponent from "../components/TimelineComponent.vue";
 
 .about-me {
   margin: auto;
-  max-width: 1000px;
-  &__text {
-    text-indent: 2rem;
-  }
+  max-width: 1100px;
   &__text:first-child {
     margin-top: 0;
+  }
+  &__block-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    & p {
+      flex: 1;
+      flex-basis: 300px;
+    }
   }
 }
 
@@ -65,5 +72,6 @@ import TimelineComponent from "../components/TimelineComponent.vue";
   margin: auto;
   margin-top: 16px;
   width: 100%;
+  max-width: 650px;
 }
 </style>

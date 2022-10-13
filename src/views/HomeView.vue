@@ -131,6 +131,15 @@ section {
   &__h1 {
     line-height: 3.2rem;
     animation: slide-from-bottom 1s normal ease-in-out;
+    @media screen and (max-width: 550px) {
+      font-size: 3.5rem;
+    }
+    @media screen and (max-width: 470px) {
+      font-size: 2.9rem;
+    }
+    @media screen and (max-width: 395px) {
+      font-size: 2.5rem;
+    }
   }
 }
 

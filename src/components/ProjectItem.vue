@@ -57,8 +57,11 @@ $breakpoint: 1000px;
     flex: 8;
     flex-direction: column;
     min-width: 300px;
-    padding: 1rem;
+    padding: 16px 1rem;
     text-indent: 24px;
+    @media screen and (max-width: $breakpoint) {
+      padding-top: 0;
+    }
   }
   &__description {
     text-indent: 24px;
@@ -94,6 +97,7 @@ $breakpoint: 1000px;
     }
     @media screen and (max-width: $breakpoint) {
       object-position: center;
+      margin-top: 16px;
       &:hover {
         scale: 1.2;
         transform: inherit;
