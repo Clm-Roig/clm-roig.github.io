@@ -9,14 +9,25 @@ import AboutView from "./AboutView.vue";
   <div class="texture-bg"></div>
   <main>
     <div class="side-bar side-bar--left">
-      <a class="side-bar__a" href="mailto:clm.roig@gmail.com"
+      <div class="side-bar--left__locale-changer">
+        <select v-model="$i18n.locale">
+          <option
+            v-for="locale in $i18n.availableLocales"
+            :key="`locale-${locale}`"
+            :value="locale"
+          >
+            {{ locale }}
+          </option>
+        </select>
+      </div>
+      <a class="side-bar__link" href="mailto:clm.roig@gmail.com"
         >clm.roig@gmail.com</a
       >
     </div>
 
     <div class="side-bar side-bar--right">
       <a
-        class="side-bar__a"
+        class="side-bar__link"
         href="https://github.com/clm-roig/"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,7 +38,7 @@ import AboutView from "./AboutView.vue";
         ></font-awesome-icon>
       </a>
       <a
-        class="side-bar__a"
+        class="side-bar__link"
         href="https://www.linkedin.com/in/clm-roig/"
         target="_blank"
         rel="noopener noreferrer"
@@ -41,7 +52,7 @@ import AboutView from "./AboutView.vue";
 
     <header class="header">
       <h1 class="header__h1">Clément Roig</h1>
-      <p class="header__what-i-am">Web developer · Musician · Nature lover</p>
+      <p class="header__what-i-am">{{ $t("header.whatIAm") }}</p>
     </header>
 
     <section id="skills" class="section--bg-dark">
@@ -61,11 +72,8 @@ import AboutView from "./AboutView.vue";
 
   <footer class="footer section--bg-dark">
     <p>Clément ROIG</p>
-    <p class="footer__caption">
-      Website using <a href="https://vuejs.org/">Vue.js framework</a> and
-      <a href="https://sass-lang.com/">SASS (SCSS)</a>
-      only
-    </p>
+    <!-- eslint-disable-next-line vue/no-v-html-->
+    <p class="footer__caption" v-html="$t('built-using')"></p>
   </footer>
 </template>
 
@@ -151,11 +159,11 @@ section {
     width: 2px;
   }
 
-  &__a {
+  &__link {
     color: $white;
   }
 
-  &__a:hover {
+  &__link:hover {
     color: $primary-color;
     background-color: inherit;
     transform: translateX(-8px);
@@ -166,6 +174,12 @@ section {
     left: 0;
     top: 0;
     transform: rotateZ(180deg);
+    &__locale-changer {
+      margin-bottom: 8px;
+      & select {
+        border: none;
+      }
+    }
     &::after {
       margin-top: 8px;
     }

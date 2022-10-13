@@ -1,0 +1,41 @@
+{
+  "header": {
+    "whatIAm": "Développeur web · Musicien · Amoureux de la nature"
+  },
+  "skills": {
+    "section-title": "Compétences"
+  },
+  "Back-end": "Back-end",
+  "Front-end": "Front-end",
+  "Test / CI": "Test / CI",
+  "DBMS": "SGBD",
+  "Misc": "Divers",
+  "projects": {
+    "built-with:": "Développé avec :",
+    "section-title": "Projets",
+    "suivie": {
+      "title": "SuiVie",
+      "description": "SuiVie est une application web inspirée de l'outil de suivi du Bullet Journal. Elle a pour but de suivre vos habitudes comme le sport, la nourriture, l'hygiène, les soins personnels, les dépenses... Même si elle fonctionne sur ordinateur, elle est conçue pour les appareils mobiles. Je travaille seul sur ce projet."
+    },
+    "grottocenter": {
+      "title": "Grottocenter",
+      "description": "Grottocenter est une base de données mondiale communautaire dédiée à la spéléologie et basée sur le système collaboratif wiki. Depuis 2019, en tant que freelance, j'ai travaillé sur différentes fonctionnalités (authentification, notifications, recherche avancée, soumission de documents) et j'ai contribué aux choix d'architecture, à la maintenance du code et ainsi qu'à de nombreux refactorings."
+    }
+  },
+  "about": {
+    "section-title": "À propos de moi",
+    "greeting": "Bien le bonjour, je m'appelle <b>Clément Roig</b> !",
+    "part1": "Je suis un être humain et aussi un développeur web. J'aime développé des <b>interfaces web agréables et esthétiques, mais aussi des API REST utiles et pratiques pour les autres développeurs</b>. J'ai obtenu mon <b>diplôme d'ingénieur en informatique et gestion</b> en 2019. Je suis constamment en train d'apprendre et de m'améliorer pour parfaire le code que je produis : le refactoring, la réduction des répétitions, les tests et la documentation forment une <u>partie essentielle de mon workflow</u>.",
+    "part2": "Je m'épanouis en développant des solutions pour des organisations pertinentes selon moi, qui œuvrent dans des domaines comme <b>l'éducation, la santé, la protection de l'environnement, la lutte contre le changement climatique ou le partage des connaissances</b>.",
+    "part3": "Quand je ne suis pas en train de peaufiner une interface web au pixel près ou de pousser un refactoring d'API sur GitHub, je fais de la musique à l'<a href=\"https://onyx-studio.fr\" rel=\"noopener noreferrer\">Onyx Studio</a>. Vous me trouverez également en randonnées dans les Pyrénées ariégeoises, ou entrain de cueillir des champignons ou des châtaignes.",
+    "timeline": {
+      "dut": "D.U.T Informatique",
+      "engineer-degree": "Ingénieur en Informatique",
+      "freelance": "Développeur Freelance"
+    }
+  },
+  "contact": {
+    "section-title": "Me contacter"
+  },
+  "built-using": "Site développé en utilisant <a href=\"https://vuejs.org/\">le framework Vue.js</a> et <a href=\"https://sass-lang.com/\">SASS (SCSS)</a> uniquement"
+}

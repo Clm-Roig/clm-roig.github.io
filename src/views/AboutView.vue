@@ -3,46 +3,31 @@ import TimelineComponent from "../components/TimelineComponent.vue";
 </script>
 
 <template>
-  <h2>About me</h2>
+  <h2>{{ $t("about.section-title") }}</h2>
   <figure class="portrait">
     <img
       class="portrait__gravatar"
       src="/src/assets/images/gravatar_no_bg.png"
     />
-    <figcaption class="portrait__caption">
-      Hi, I'm <b>Clément Roig</b>!
-    </figcaption>
+    <!-- eslint-disable vue/no-v-html -->
+    <figcaption
+      class="portrait__caption"
+      v-html="$t('about.greeting')"
+    ></figcaption>
+    <!-- eslint-enable vue/no-v-html -->
   </figure>
 
   <div class="about-me">
-    <p class="about-me__text">
-      I'm a human being and also a web developer. I like to build
-      <b
-        >user-friendly and beautiful web interfaces but also useful and
-        practical REST API for other developers</b
-      >. I have graduated in <b>computer science engineering</b> in 2019. I am
-      constantly learning and improving my self to enhance my code quality:
-      refactoring, reducing repetitions, testing and documenting my code is a
-      <u>core part of my workflow</u>.
-    </p>
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <p class="about-me__text" v-html="$t('about.part1')" />
 
     <TimelineComponent />
 
-    <p class="about-me__text">
-      I am thriving by developing solution for meaningful organizations, which
-      work on fields like
-      <b
-        >education, health, protection of the environment, climate change
-        fighting or knowledge sharing</b
-      >.
-    </p>
-    <p class="about-me__text">
-      When I'm not pixel-perfecting a web interface or pushing an API
-      refactoring on GitHub, I'm making music at the
-      <a href="https://onyx-studio.fr" rel="noopener noreferrer">Onyx Studio</a
-      >. You will also find me hiking in the Ariège Pyrenees (South of France),
-      picking mushrooms or chestnuts.
-    </p>
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <p class="about-me__text" v-html="$t('about.part2')"></p>
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <p class="about-me__text" v-html="$t('about.part3')"></p>
+
     <img class="forest-picture" src="/src/assets/images/forest.jpg" />
   </div>
 </template>
@@ -59,6 +44,7 @@ import TimelineComponent from "../components/TimelineComponent.vue";
 
   &__caption {
     position: relative;
+    margin-bottom: 8px;
   }
 }
 

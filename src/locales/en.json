@@ -1,0 +1,41 @@
+{
+  "header": {
+    "whatIAm": "Web developer · Musician · Nature lover"
+  },
+  "skills": {
+    "section-title": "Skills"
+  },
+  "Back-end": "Back-end",
+  "Front-end": "Front-end",
+  "Test / CI": "Test / CI",
+  "DBMS": "DBMS",
+  "Misc": "Misc",
+  "projects": {
+    "built-with:": "Built with:",
+    "section-title": "Projects",
+    "suivie": {
+      "title": "SuiVie",
+      "description": "SuiVie is a web application inspired by the Bullet Journal's trackers tool. It aims to track your habits like sports, food, hygiene, self-care, expenses... Even if it works on desktop, it is designed for mobile devices. I work alone on this project."
+    },
+    "grottocenter": {
+      "title": "Grottocenter",
+      "description": "Grottocenter is a community world database dedicated to speleology and based on the wiki collaborative system. Since 2019, as a freelancer, I have worked on various features (authentication, notifications, advanced search, document submission) & I have been involved in the architecture choices, code maintenance and many refactorings."
+    }
+  },
+  "about": {
+    "section-title": "About me",
+    "greeting": "Hi, I'm <b>Clément Roig</b>!",
+    "part1": "I'm a human being and also a web developer. I like to build <b>user-friendly and beautiful web interfaces but also useful and practical REST API for other developers</b>. I have graduated in <b>computer science engineering</b> in 2019. I am constantly learning and improving my self to enhance my code quality: refactoring, reducing repetitions, testing and documenting my code is a <u>core part of my workflow</u>.",
+    "part2": "I am thriving by developing solution for meaningful organizations, which work on fields like <b>education, health, protection of the environment, climate change fighting or knowledge sharing</b>.",
+    "part3": "When I'm not pixel-perfecting a web interface or pushing an API refactoring on GitHub, I'm making music at the <a href=\"https://onyx-studio.fr\" rel=\"noopener noreferrer\">Onyx Studio</a>. You will also find me hiking in the Ariège Pyrenees (South of France), picking mushrooms or chestnuts.",
+    "timeline": {
+      "dut": "CS D.U.T",
+      "engineer-degree": "CS Engineer Degree",
+      "freelance": "Freelance Developer"
+    }
+  },
+  "contact": {
+    "section-title": "Contact me"
+  },
+  "built-using": "Website built using <a href=\"https://vuejs.org/\">Vue.js framework</a> and <a href=\"https://sass-lang.com/\">SASS (SCSS)</a> only"
+}

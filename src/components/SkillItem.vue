@@ -13,7 +13,7 @@ defineProps<{
       class="skill__category"
       :style="{ 'text-decoration-color': skill.category.color }"
     >
-      {{ skill.category.name }}
+      {{ $t(skill.category.name) }}
     </p>
     <div class="skill__level">
       <!-- eslint-disable-next-line vue/valid-v-for vue/no-unused-vars -->

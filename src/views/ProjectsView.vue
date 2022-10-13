@@ -6,22 +6,22 @@ const { suivie, grottocenter } = projects;
 </script>
 
 <template>
-  <h2>Projects</h2>
+  <h2>{{ $t("projects.section-title") }}</h2>
 
   <ul class="projects">
     <ProjectItem
       :built-with="suivie.builtWith"
-      :description="suivie.description"
+      :description="$t('projects.suivie.description')"
       :img-path="suivie.imgPath"
-      :title="suivie.title"
+      :title="$t('projects.suivie.title')"
       :url="suivie.url"
     />
     <ProjectItem
       :built-with="grottocenter.builtWith"
-      :description="grottocenter.description"
+      :description="$t('projects.grottocenter.description')"
       :img-path="grottocenter.imgPath"
       :right-img="true"
-      :title="grottocenter.title"
+      :title="$t('projects.grottocenter.title')"
       :url="grottocenter.url"
     />
   </ul>

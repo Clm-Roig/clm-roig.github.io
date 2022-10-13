@@ -3,7 +3,7 @@ import SkillList from "../components/SkillList.vue";
 </script>
 
 <template>
-  <h2>Skills</h2>
+  <h2>{{ $t("skills.section-title") }}</h2>
   <SkillList />
 </template>
 

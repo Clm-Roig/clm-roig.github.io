@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h2>Contact me</h2>
+  <h2>{{ $t("contact.section-title") }}</h2>
   <div class="contact">
     <p><a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a></p>
     <a

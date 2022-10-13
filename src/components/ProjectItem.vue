@@ -21,7 +21,9 @@ defineProps<{
       <p class="project__description">
         {{ description }}
       </p>
-      <p class="project__build-with"><b>Built with:</b> {{ builtWith }}</p>
+      <p class="project__build-with">
+        <b>{{ $t("projects.built-with:") }}</b> {{ builtWith }}
+      </p>
       <div v-if="url" class="project__link">
         <a :href="url">{{ url }}</a>
       </div>
