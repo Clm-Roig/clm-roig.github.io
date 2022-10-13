@@ -86,7 +86,7 @@ $second-breakpoint: 620px;
 }
 
 .legend {
-  bottom: 25%;
+  bottom: 20%;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
