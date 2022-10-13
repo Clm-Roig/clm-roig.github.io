@@ -39,7 +39,8 @@
     }
   },
   "contact": {
-    "section-title": "Me contacter"
+    "section-title": "Me contacter",
+    "text": "Je cherche actuellement un emploi ou une mission à hauteur de 28h / semaine maximum :)"
   },
   "built-using": "Site développé en utilisant <a href=\"https://vuejs.org/\">le framework Vue.js</a> et <a href=\"https://sass-lang.com/\">SASS (SCSS)</a> uniquement"
 }

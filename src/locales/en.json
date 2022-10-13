@@ -39,7 +39,8 @@
     }
   },
   "contact": {
-    "section-title": "Contact me"
+    "section-title": "Contact me",
+    "text": "I'm currently looking for a part-time job or mission (28h / week maximum) :)"
   },
   "built-using": "Website built using <a href=\"https://vuejs.org/\">Vue.js framework</a> and <a href=\"https://sass-lang.com/\">SASS (SCSS)</a> only"
 }
