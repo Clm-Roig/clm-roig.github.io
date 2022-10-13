@@ -25,7 +25,7 @@ defineProps<{
         <b>{{ $t("projects.built-with:") }}</b> {{ builtWith }}
       </p>
       <div v-if="url" class="project__link">
-        <a :href="url">{{ url }}</a>
+        <a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a>
       </div>
     </div>
     <img
