@@ -1,9 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
+</script>
 
 <template>
   <h2>{{ $t("contact.section-title") }}</h2>
   <div class="contact">
     <p>{{ $t("contact.text") }}</p>
+    <div>
+      <a
+        :href="$i18n.locale === 'fr' ? FRENCH_CV_LINK : ENGLISH_CV_LINK"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ $t("contact.download-cv") }}</a
+      >
+    </div>
     <p><a href="mailto:clm.roig@gmail.com">clm.roig@gmail.com</a></p>
     <div class="contact__icons">
       <a
