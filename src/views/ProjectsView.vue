@@ -13,6 +13,7 @@ const { suivie, grottocenter } = projects;
       :built-with="suivie.builtWith"
       :description="$t('projects.suivie.description')"
       :img-path="suivie.imgPath"
+      :internal-slug="suivie.internalSlug"
       :title="$t('projects.suivie.title')"
       :url="suivie.url"
     />
@@ -20,6 +21,7 @@ const { suivie, grottocenter } = projects;
       :built-with="grottocenter.builtWith"
       :description="$t('projects.grottocenter.description')"
       :img-path="grottocenter.imgPath"
+      :internal-slug="grottocenter.internalSlug"
       :right-img="true"
       :title="$t('projects.grottocenter.title')"
       :url="grottocenter.url"

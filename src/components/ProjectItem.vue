@@ -3,6 +3,7 @@ defineProps<{
   builtWith: string;
   description: string;
   imgPath: string;
+  internalSlug?: string;
   rightImg?: boolean;
   title: string;
   url?: string;
@@ -17,7 +18,16 @@ defineProps<{
       class="project__img project__img--left"
     />
     <div class="project__text">
-      <h3 class="project__title">{{ title }}</h3>
+      <div class="project__text-header">
+        <h3 class="project__title">{{ title }}</h3>
+        <router-link
+          v-if="internalSlug"
+          :to="'/projects/' + internalSlug"
+          class="project__more-info"
+          >{{ $t("projects.more-info") }}
+          <font-awesome-icon icon="fa-solid fa-plus" />
+        </router-link>
+      </div>
       <p class="project__description">
         {{ description }}
       </p>
@@ -49,8 +59,14 @@ $breakpoint: 1000px;
     background-color: $black;
     box-shadow: inset 0 0 0 4px $primary-color, inset 0 0 0 8px $white;
   }
-  &__title {
+  &__text-header {
+    align-items: flex-start;
+    display: flex;
+    gap: 0.5rem;
     margin-bottom: 16px;
+  }
+  &__more-info {
+    font-size: 0.8rem;
   }
   &__text {
     display: flex;
@@ -58,7 +74,6 @@ $breakpoint: 1000px;
     flex-direction: column;
     min-width: 300px;
     padding: 16px 1rem;
-    text-indent: 24px;
     @media screen and (max-width: $breakpoint) {
       padding-top: 0;
     }
@@ -72,6 +87,7 @@ $breakpoint: 1000px;
   &__link {
     margin-top: 8px;
   }
+
   &__img {
     flex-basis: 400px;
     object-fit: contain;
