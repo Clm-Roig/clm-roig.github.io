@@ -45,14 +45,10 @@
       </a>
     </div>
 
-    <header class="header">
-      <h1 class="header__h1">Clément Roig</h1>
-      <p class="header__what-i-am">{{ $t("header.whatIAm") }}</p>
-    </header>
     <slot></slot>
   </main>
 
-  <footer class="footer section--bg-dark">
+  <footer class="footer dark-bg">
     <p>Clément ROIG</p>
     <!-- eslint-disable-next-line vue/no-v-html-->
     <p class="footer__caption" v-html="$t('built-using')"></p>
@@ -82,10 +78,7 @@
   }
 }
 
-section {
-  padding: 16px $sidebar-width 16px $sidebar-width;
-}
-.section--bg-dark {
+.dark-bg {
   background-color: $black;
 }
 
@@ -97,30 +90,6 @@ section {
   opacity: 0.1;
   position: fixed;
   width: 100vw;
-}
-
-.header {
-  padding: 3rem;
-  &__what-i-am {
-    animation: slide-from-bottom 1s normal ease-in-out;
-    font-family: "Quicksand";
-    font-size: 1.25rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  &__h1 {
-    line-height: 3.2rem;
-    animation: slide-from-bottom 1s normal ease-in-out;
-    @media screen and (max-width: 550px) {
-      font-size: 3.5rem;
-    }
-    @media screen and (max-width: 470px) {
-      font-size: 2.9rem;
-    }
-    @media screen and (max-width: 395px) {
-      font-size: 2.5rem;
-    }
-  }
 }
 
 .footer {

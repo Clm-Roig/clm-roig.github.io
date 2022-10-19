@@ -25,7 +25,6 @@ defineProps<{
           :to="'/projects/' + internalSlug"
           class="project__more-info"
           >{{ $t("projects.more-info") }}
-          <font-awesome-icon icon="fa-solid fa-plus" />
         </router-link>
       </div>
       <p class="project__description">

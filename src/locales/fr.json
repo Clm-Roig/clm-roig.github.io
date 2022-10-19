@@ -14,13 +14,42 @@
   "Test / CI": "Test / CI",
   "DBMS": "SGBD",
   "Misc": "Divers",
+  "back-to-projects": "Revenir à la liste des projets",
+  "features": "fonctionnalités",
+  "presentation": "présentation",
+  "technical-overview": "description technique",
+  "under-construction": "En construction : revenez ultérieurement !",
   "projects": {
     "built-with:": "Développé avec :",
     "more-info": "en savoir +",
     "section-title": "Projets",
     "suivie": {
       "title": "SuiVie",
-      "description": "SuiVie est une application web inspirée de l'outil de suivi du Bullet Journal. Elle a pour but de suivre vos habitudes comme le sport, la nourriture, l'hygiène, les soins personnels, les dépenses... Même si elle fonctionne sur ordinateur, elle est conçue pour les appareils mobiles. Je travaille seul sur ce projet."
+      "description": "SuiVie est une application web inspirée de l'outil de suivi d'habitudes d'un bullet journal. Elle a pour but de suivre vos habitudes comme le sport, la nourriture, l'hygiène, les soins personnels, les dépenses... Même si elle fonctionne sur ordinateur, elle est conçue pour les appareils mobiles. Je travaille seul sur ce projet.",
+      "details": {
+        "part1": "SuiVie est une application web inspirée de l'outil de suivi d'habitudes d'un bullet journal. Elle a pour but de suivre vos habitudes comme le sport, la nourriture, l'hygiène, les soins personnels, les dépenses...",
+        "part2": "Il s'agit d'un site web développé principalement pour mobile (une version desktop verra bientôt le jour).",
+        "part3": "Ce projet a vu le jour pour deux raisons :",
+        "reason1": "je cherchais à développer une application en React en utilisant certains outils que je souhaitais apprendre (TypeScript, Cypress, Recharts notamment).",
+        "reason2": "j'aime les statistiques et j'organisais ma vie autour de 2 outils de productivité : les todo lists et le calendrier. Grâce à eux, je peux efficacement organiser et planifier mes évènements ponctuels. Pour les compléter, je souhaitais donc bénéficier d'un outil me permettant d'avoir une vue d'ensemble de mes habitudes.",
+        "feat1": "Créer un tracker avec un nom, une date de début, une couleur, une durée, une fréquence et des objectifs",
+        "feat2": "Valider un tracker aujourd'hui ou dans le passé",
+        "feat3": "Masquer un tracker pour un jour si vous êtes sûr de ne pas le valider ou si vous voulez vous concentrer sur les autres",
+        "feat4": "Visualiser des statistiques sur les trackers par semaine, mois et année",
+        "feat5": "Thème sombre",
+        "tech1": "L'application utilise <b>React, TypeScript, MUI, Framer, Redux et Recharts</b>. Elle est testée à l'aide de <b>Jest</b> pour les tests unitaires (100% de couverture sur les reducers) et <b>Cypress</b> pour les tests fonctionnels. L'ensemble du code est formatté grâce à <b>Prettier</b> et suit les recommendations d'<b>ESLint</b>.",
+        "tech2": "Le développement de l'application exploite les nombreux outils disponibles sur GitHub. Un tableau Kanban définit les fonctionnalités à développer par ordre de priorité, des issues sont créées puis résolues au sein des pull requests. Enfin, une action teste et déploie automatiquement le code."
+      },
+      "images": {
+        "home": "Page d'accueil",
+        "trackers": "Liste des trackers",
+        "custom-validate": "Validation partielle",
+        "create": "Création d'un tracker",
+        "dark-mode": "Thème sombre",
+        "manage": "Gestion des trackers",
+        "stats": "Statistiques",
+        "settings": "Paramètres"
+      }
     },
     "grottocenter": {
       "title": "Grottocenter",

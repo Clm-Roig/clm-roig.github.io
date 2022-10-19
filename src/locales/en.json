@@ -14,6 +14,11 @@
   "Test / CI": "Test / CI",
   "DBMS": "DBMS",
   "Misc": "Misc",
+  "back-to-projects": "Back to the projects list",
+  "features": "features",
+  "presentation": "presentation",
+  "technical-overview": "technical overview",
+  "under-construction": "Under construction : come back later!",
   "projects": {
     "built-with:": "Built with:",
     "more-info": "learn more",
