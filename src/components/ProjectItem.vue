@@ -53,7 +53,7 @@ $breakpoint: 1000px;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  transition: all 0.3s;
+  transition: all $default-transition-duration;
   &:hover {
     background-color: $black;
     box-shadow: inset 0 0 0 4px $primary-color, inset 0 0 0 8px $white;

@@ -50,6 +50,7 @@ $second-breakpoint: 620px;
 .wrapper {
   display: flex;
   gap: 16px;
+  margin: auto 16px; // increase lateral margin because borders increase items size
   @media screen and (max-width: $breakpoint) {
     flex-direction: column;
     gap: 24px;

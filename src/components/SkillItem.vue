@@ -32,17 +32,17 @@ defineProps<{
   flex-direction: column;
   justify-content: space-around;
   padding: 4px;
-  width: 6.2rem;
-  height: 6.2rem;
+  width: 5.9rem;
+  height: 5.9rem;
   transition: all 0.5s;
 
   @media screen and (max-width: 600px) {
-    width: 6rem;
-    height: 6rem;
+    width: 5.7rem;
+    height: 5.7rem;
   }
   @media screen and (max-width: 440px) {
-    width: 5.8rem;
-    height: 5.8rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   &__h3 {

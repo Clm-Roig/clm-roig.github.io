@@ -14,6 +14,7 @@
   "Test / CI": "Test / CI",
   "DBMS": "DBMS",
   "Misc": "Misc",
+  "change-language:": "Change language:",
   "back-to-projects": "Back to the projects list",
   "features": "features",
   "presentation": "presentation",
@@ -49,5 +50,5 @@
     "section-title": "Contact me",
     "text": "I'm currently looking for a part-time job or mission (28h / week maximum) :)"
   },
-  "built-using": "Website built using <a href=\"https://vuejs.org/\">Vue.js framework</a> and <a href=\"https://sass-lang.com/\">SASS (SCSS)</a> only"
+  "built-using": "Website built using <a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"noopener noreferrer\">le framework Vue.js</a>, <a href=\"https://sass-lang.com/\" target=\"_blank\" rel=\"noopener noreferrer\">SASS (SCSS)</a> and <a href=\"https://kazupon.github.io/vue-i18n/\" target=\"_blank\" rel=\"noopener noreferrer\">Vue I18n</a>"
 }

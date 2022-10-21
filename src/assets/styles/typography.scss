@@ -40,7 +40,7 @@ h2 {
     opacity: 1;
     position: absolute;
     width: 100%;
-    transition: all 0.2s;
+    transition: all $default-transition-duration;
     transform: translateZ(-1px);
   }
 }
@@ -68,13 +68,13 @@ a {
   color: $primary-color-light;
   font-weight: 500;
   text-decoration: none;
-  transition: 0.3s;
+  transition: $default-transition-duration;
 }
 
 a:hover {
   background-color: $primary-color-light;
   color: $black;
-  transition: 0.3s;
+  transition: $default-transition-duration;
 }
 
 b {

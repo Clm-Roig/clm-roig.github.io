@@ -1,19 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LanguageSwitcher from "./LanguageSwitcher.vue";
+</script>
 
 <template>
   <div class="texture-bg"></div>
   <main>
     <div class="side-bar side-bar--left">
       <div class="side-bar--left__locale-changer">
-        <select v-model="$i18n.locale">
-          <option
-            v-for="locale in $i18n.availableLocales"
-            :key="`locale-${locale}`"
-            :value="locale"
-          >
-            {{ locale }}
-          </option>
-        </select>
+        <LanguageSwitcher />
       </div>
       <a class="side-bar__link" href="mailto:clm.roig@gmail.com"
         >clm.roig@gmail.com</a
@@ -52,6 +46,7 @@
     <p>Clément ROIG</p>
     <!-- eslint-disable-next-line vue/no-v-html-->
     <p class="footer__caption" v-html="$t('built-using')"></p>
+    <LanguageSwitcher :with-legend="true" />
   </footer>
 </template>
 
@@ -136,7 +131,7 @@
   &__link:hover {
     color: $primary-color;
     background-color: inherit;
-    transform: translateX(-8px);
+    transform: translateX(-4px);
   }
 
   &--left {
@@ -146,9 +141,6 @@
     transform: rotateZ(180deg);
     &__locale-changer {
       margin-bottom: 8px;
-      & select {
-        border: none;
-      }
     }
     &::after {
       margin-top: 8px;

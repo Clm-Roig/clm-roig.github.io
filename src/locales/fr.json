@@ -14,6 +14,7 @@
   "Test / CI": "Test / CI",
   "DBMS": "SGBD",
   "Misc": "Divers",
+  "change-language:": "Changer de langue :",
   "back-to-projects": "Revenir à la liste des projets",
   "features": "fonctionnalités",
   "presentation": "présentation",
@@ -74,5 +75,5 @@
     "section-title": "Me contacter",
     "text": "Je cherche actuellement un emploi ou une mission à hauteur de 28h / semaine maximum :)"
   },
-  "built-using": "Site développé en utilisant <a href=\"https://vuejs.org/\">le framework Vue.js</a> et <a href=\"https://sass-lang.com/\">SASS (SCSS)</a> uniquement"
+  "built-using": "Site développé en utilisant <a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"noopener noreferrer\">le framework Vue.js</a>, <a href=\"https://sass-lang.com/\" target=\"_blank\" rel=\"noopener noreferrer\">SASS (SCSS)</a> et <a href=\"https://kazupon.github.io/vue-i18n/\" target=\"_blank\" rel=\"noopener noreferrer\">Vue I18n</a>"
 }
