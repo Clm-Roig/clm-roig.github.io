@@ -80,7 +80,7 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
 .texture-bg {
   background: radial-gradient(
       at 0% 0%,
-      lighten($background-color, 6%) 0,
+      lighten($background-color, 10%) 0,
       transparent 30%
     ),
     radial-gradient(
