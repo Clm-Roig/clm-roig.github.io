@@ -52,7 +52,7 @@ import AboutView from "./AboutView.vue";
 }
 
 section {
-  padding: 16px $sidebar-width;
+  padding: 32px $sidebar-width;
 }
 .section--bg-dark {
   background-color: $black;

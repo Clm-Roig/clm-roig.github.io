@@ -83,17 +83,29 @@
 }
 
 .texture-bg {
-  background: url("@/assets/images/texture_green_silver.jpg");
+  background: radial-gradient(
+      at 0% 0%,
+      lighten($background-color, 6%) 0,
+      transparent 30%
+    ),
+    radial-gradient(
+      at 75% 40%,
+      lighten($background-color, 9%) 0,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 0% 80%,
+      lighten($background-color, 8%) 0,
+      transparent 80%
+    );
   background-attachment: fixed;
-  filter: blur(5px) brightness(110%);
   height: 100vh;
-  opacity: 0.1;
   position: fixed;
   width: 100vw;
 }
 
 .footer {
-  padding: 16px 0;
+  padding: 32px 0;
   text-align: center;
   &__caption {
     font-size: 80%;
