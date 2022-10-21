@@ -33,12 +33,13 @@
         "reason1": "je cherchais à développer une application en React en utilisant certains outils que je souhaitais apprendre (TypeScript, Cypress, Recharts notamment).",
         "reason2": "j'aime les statistiques et j'organisais ma vie autour de 2 outils de productivité : les todo lists et le calendrier. Grâce à eux, je peux efficacement organiser et planifier mes évènements ponctuels. Pour les compléter, je souhaitais donc bénéficier d'un outil me permettant d'avoir une vue d'ensemble de mes habitudes.",
         "feat1": "Créer un tracker avec un nom, une date de début, une couleur, une durée, une fréquence et des objectifs",
-        "feat2": "Valider un tracker aujourd'hui ou dans le passé",
-        "feat3": "Masquer un tracker pour un jour si vous êtes sûr de ne pas le valider ou si vous voulez vous concentrer sur les autres",
+        "feat2": "Valider un tracker (partiellement ou complètement) aujourd'hui ou dans le passé",
+        "feat3": "Masquer un tracker pour un jour si vous êtes sûr de ne pas le valider ou si vous voulez vous concentrer sur les autres trackers",
         "feat4": "Visualiser des statistiques sur les trackers par semaine, mois et année",
-        "feat5": "Thème sombre",
+        "feat5": "Archiver, supprimer ou éditer vos trackers à tout moment",
+        "feat6": "Thème sombre ou clair disponibles",
         "tech1": "L'application utilise <b>React, TypeScript, MUI, Framer, Redux et Recharts</b>. Elle est testée à l'aide de <b>Jest</b> pour les tests unitaires (100% de couverture sur les reducers) et <b>Cypress</b> pour les tests fonctionnels. L'ensemble du code est formatté grâce à <b>Prettier</b> et suit les recommendations d'<b>ESLint</b>.",
-        "tech2": "Le développement de l'application exploite les nombreux outils disponibles sur GitHub. Un tableau Kanban définit les fonctionnalités à développer par ordre de priorité, des issues sont créées puis résolues au sein des pull requests. Enfin, une action teste et déploie automatiquement le code."
+        "tech2": "Le développement de l'application exploite les nombreux outils disponibles sur <b>GitHub</b>. Un tableau <b>Kanban</b> définit les fonctionnalités à développer par ordre de priorité, des issues sont créées puis résolues au sein des pull requests. Enfin, un <b>pipeline CI/CD</b> teste et déploie automatiquement le code via une <b>GitHub Action</b>."
       },
       "images": {
         "home": "Page d'accueil",
