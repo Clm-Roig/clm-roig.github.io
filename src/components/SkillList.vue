@@ -77,7 +77,7 @@ $second-breakpoint: 620px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.25rem;
     padding-left: 0;
     @media screen and (max-width: $breakpoint) {
       flex-direction: row;

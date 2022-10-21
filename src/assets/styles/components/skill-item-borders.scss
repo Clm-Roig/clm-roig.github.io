@@ -47,17 +47,28 @@ $border-4-before-deg: 30deg;
     transform: rotate(-360deg + $border-4-after-deg);
   }
 }
+.border-3::before {
+  animation: rotating-3-before 10s linear infinite;
+}
+
+.border-4::before {
+  animation: rotating-4-before 8s linear infinite;
+}
+
+.border-4::after {
+  animation: rotating-4-after 9s linear infinite;
+}
 
 .skill:hover.border-3::before {
-  animation: rotating-3-before 2s linear infinite;
+  animation-duration: 3s;
 }
 
 .skill:hover.border-4::before {
-  animation: rotating-4-before 2s linear infinite;
+  animation-duration: 3s;
 }
 
 .skill:hover.border-4::after {
-  animation: rotating-4-after 2s linear infinite;
+  animation-duration: 3s;
 }
 
 .border-1,
@@ -90,4 +101,5 @@ $border-4-before-deg: 30deg;
 .border-4::after {
   transform: rotate($border-4-after-deg);
   border-color: $primary-color-dark;
+  z-index: 0; /* put the "after" border behind everything: it must not cover the skill text */
 }
