@@ -35,10 +35,10 @@
   },
   "about": {
     "section-title": "About me",
-    "greeting": "Hi, I'm <b>Clément Roig</b>!",
+    "greeting": "Hi, I'm {name}!",
     "part1": "I'm a human being and also a web developer. I like to build <b>user-friendly and beautiful web interfaces but also useful and practical REST API for other developers</b>. I have graduated in <b>computer science engineering</b> in 2019. I am constantly learning and improving my self to enhance my code quality: refactoring, reducing repetitions, testing and documenting my code is a <u>core part of my workflow</u>.",
     "part2": "I am thriving by developing solution for meaningful organizations, which work on fields like <b>education, health, protection of the environment, climate change fighting or knowledge sharing</b>.",
-    "part3": "When I'm not pixel-perfecting a web interface or pushing an API refactoring on GitHub, I'm making music at the <a href=\"https://onyx-studio.fr\" rel=\"noopener noreferrer\">Onyx Studio</a>. You will also find me hiking in the Ariège Pyrenees (South of France), picking mushrooms or chestnuts.",
+    "part3": "When I'm not pixel-perfecting a web interface or pushing an API refactoring on GitHub, I'm making music at the {onyxStudioLink}. You will also find me hiking in the Ariège Pyrenees (South of France), picking mushrooms or chestnuts.",
     "timeline": {
       "dut": "CS D.U.T",
       "engineer-degree": "CS Engineer Degree",
@@ -50,5 +50,6 @@
     "section-title": "Contact me",
     "text": "I'm currently looking for a part-time job or mission (28h / week maximum) :)"
   },
-  "built-using": "Website built using <a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"noopener noreferrer\">le framework Vue.js</a>, <a href=\"https://sass-lang.com/\" target=\"_blank\" rel=\"noopener noreferrer\">SASS (SCSS)</a> and <a href=\"https://kazupon.github.io/vue-i18n/\" target=\"_blank\" rel=\"noopener noreferrer\">Vue I18n</a>"
+  "built-using": "Website built using {vueLink}, {sassLink} and {vueI18nLink}",
+  "vue-framework": "the Vue.js framework"
 }

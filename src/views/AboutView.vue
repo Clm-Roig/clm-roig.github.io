@@ -9,12 +9,16 @@ import TimelineComponent from "../components/TimelineComponent.vue";
       class="portrait__gravatar"
       src="/src/assets/images/gravatar_no_bg.png"
     />
-    <!-- eslint-disable vue/no-v-html -->
-    <figcaption
+    <i18n-t
+      keypath="about.greeting"
+      tag="figcaption"
       class="portrait__caption"
-      v-html="$t('about.greeting')"
-    ></figcaption>
-    <!-- eslint-enable vue/no-v-html -->
+      scope="global"
+    >
+      <template #name>
+        <b>Clément Roig</b>
+      </template>
+    </i18n-t>
   </figure>
 
   <div class="about-me">
@@ -26,8 +30,18 @@ import TimelineComponent from "../components/TimelineComponent.vue";
     <div class="about-me__block-2">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <p class="about-me__text" v-html="$t('about.part2')"></p>
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <p class="about-me__text" v-html="$t('about.part3')"></p>
+      <i18n-t
+        keypath="about.part3"
+        tag="p"
+        class="about-me__text"
+        scope="global"
+      >
+        <template #onyxStudioLink>
+          <a href="https://onyx-studio.fr" rel="noopener noreferrer">
+            Onyx Studio
+          </a>
+        </template>
+      </i18n-t>
     </div>
     <img class="forest-picture" src="/src/assets/images/forest.jpg" />
   </div>

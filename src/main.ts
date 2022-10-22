@@ -12,6 +12,7 @@ import fr from "./locales/fr.json";
 import "./assets/styles/main.scss";
 
 const i18n = createI18n({
+  allowComposition: true,
   locale: "fr",
   messages: {
     fr,

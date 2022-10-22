@@ -44,8 +44,36 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
 
   <footer class="footer dark-bg">
     <p>Clément ROIG</p>
-    <!-- eslint-disable-next-line vue/no-v-html-->
-    <p class="footer__caption" v-html="$t('built-using')"></p>
+
+    <i18n-t
+      keypath="built-using"
+      tag="p"
+      class="footer__caption"
+      scope="global"
+    >
+      <template #vueLink>
+        <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+          {{ $t("vue-framework") }}
+        </a>
+      </template>
+      <template #sassLink>
+        <a
+          href="https://sass-lang.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >SASS (SCSS)</a
+        >
+      </template>
+      <template #vueI18nLink>
+        <a
+          href="https://kazupon.github.io/vue-i18n/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Vue I18n</a
+        >
+      </template>
+    </i18n-t>
+
     <LanguageSwitcher :with-legend="true" />
   </footer>
 </template>
