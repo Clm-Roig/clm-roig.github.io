@@ -30,15 +30,18 @@ import AboutView from "./AboutView.vue";
 .header {
   padding: 3rem;
   &__what-i-am {
-    animation: slide-from-bottom 1s normal ease-in-out;
+    @include slide-y-generator("slide-what-i-am", -1rem);
+    animation: slide-what-i-am 1s backwards ease-in-out;
+    animation-delay: 0.5s;
     font-family: "Quicksand";
     font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
   }
   &__h1 {
+    @include slide-y-generator("slide-from-bottom-title", 3.2rem);
+    animation: slide-from-bottom-title 1s normal ease-in-out;
     line-height: 3.2rem;
-    animation: slide-from-bottom 1s normal ease-in-out;
     @media screen and (max-width: 550px) {
       font-size: 3.5rem;
     }

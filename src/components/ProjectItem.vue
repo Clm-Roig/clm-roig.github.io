@@ -23,7 +23,7 @@ defineProps<{
         <router-link
           v-if="internalSlug"
           :to="'/projects/' + internalSlug"
-          class="project__more-info"
+          class="link link--fancy project__more-info"
           >{{ $t("projects.more-info") }}
         </router-link>
       </div>
@@ -34,7 +34,13 @@ defineProps<{
         <b>{{ $t("projects.built-with:") }}</b> {{ builtWith }}
       </p>
       <div v-if="url" class="project__link">
-        <a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a>
+        <a
+          class="link link--fancy"
+          :href="url"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ url }}</a
+        >
       </div>
     </div>
     <img

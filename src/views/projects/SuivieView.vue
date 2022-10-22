@@ -5,9 +5,11 @@ const { suivie } = projects;
 
 <template>
   <section class="back-to-projects dark-bg">
-    <router-link :to="{ path: '/', hash: '#projects' }">{{
-      "< " + $t("back-to-projects")
-    }}</router-link>
+    <router-link
+      class="link link--fancy"
+      :to="{ path: '/', hash: '#projects' }"
+      >{{ "< " + $t("back-to-projects") }}</router-link
+    >
   </section>
   <div class="header">
     <h1>
@@ -17,9 +19,13 @@ const { suivie } = projects;
         alt="SuiVie logo"
       />
     </h1>
-    <a :href="suivie.url" target="_blank" rel="noopener noreferrer">{{
-      suivie.url
-    }}</a>
+    <a
+      class="link link--fancy"
+      :href="suivie.url"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ suivie.url }}</a
+    >
   </div>
   <section>
     <article class="dark-bg">
@@ -119,9 +125,11 @@ const { suivie } = projects;
   </section>
 
   <section class="back-to-projects">
-    <router-link :to="{ path: '/', hash: '#projects' }">{{
-      "< " + $t("back-to-projects")
-    }}</router-link>
+    <router-link
+      class="link link--fancy"
+      :to="{ path: '/', hash: '#projects' }"
+      >{{ "< " + $t("back-to-projects") }}</router-link
+    >
   </section>
 </template>
 

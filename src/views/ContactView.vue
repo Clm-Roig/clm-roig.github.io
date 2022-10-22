@@ -9,7 +9,7 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
 
     <div class="mail-resume">
       <a
-        class="mail-resume__link"
+        class="link link--fancy mail-resume__link"
         :href="$i18n.locale === 'fr' ? FRENCH_CV_LINK : ENGLISH_CV_LINK"
         target="_blank"
         rel="noopener noreferrer"
@@ -23,7 +23,10 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
           {{ $t("contact.download-cv") }}
         </p>
       </a>
-      <a class="mail-resume__link" href="mailto:clm.roig@gmail.com">
+      <a
+        class="link link--fancy mail-resume__link"
+        href="mailto:clm.roig@gmail.com"
+      >
         <font-awesome-icon
           class="contact__icon"
           size="2xl"
@@ -35,7 +38,7 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
 
     <div class="social-networks">
       <a
-        class="social-networks__link"
+        class="link link--alt social-networks__link"
         href="https://www.linkedin.com/in/clm-roig/"
         target="_blank"
         rel="noopener noreferrer"
@@ -46,7 +49,7 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
         ></font-awesome-icon>
       </a>
       <a
-        class="social-networks__link"
+        class="link link--alt social-networks__link"
         href="https://github.com/clm-roig/"
         target="_blank"
         rel="noopener noreferrer"

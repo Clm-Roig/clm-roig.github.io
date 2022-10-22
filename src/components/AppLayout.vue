@@ -9,14 +9,14 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
       <div class="side-bar--left__locale-changer">
         <LanguageSwitcher />
       </div>
-      <a class="side-bar__link" href="mailto:clm.roig@gmail.com"
+      <a class="link side-bar__link" href="mailto:clm.roig@gmail.com"
         >clm.roig@gmail.com</a
       >
     </div>
 
     <div class="side-bar side-bar--right">
       <a
-        class="side-bar__link"
+        class="link side-bar__link"
         href="https://github.com/clm-roig/"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,7 +27,7 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
         ></font-awesome-icon>
       </a>
       <a
-        class="side-bar__link"
+        class="link side-bar__link"
         href="https://www.linkedin.com/in/clm-roig/"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,12 +52,18 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
       scope="global"
     >
       <template #vueLink>
-        <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+        <a
+          class="link link--fancy"
+          href="https://vuejs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {{ $t("vue-framework") }}
         </a>
       </template>
       <template #sassLink>
         <a
+          class="link link--fancy"
           href="https://sass-lang.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -66,6 +72,7 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
       </template>
       <template #vueI18nLink>
         <a
+          class="link link--fancy"
           href="https://kazupon.github.io/vue-i18n/"
           target="_blank"
           rel="noopener noreferrer"
@@ -87,17 +94,6 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
   to {
     opacity: 1;
     transform: translateY(0) rotateZ(180deg);
-  }
-}
-
-@keyframes slide-from-bottom {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -176,7 +172,8 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
   }
 
   &--right {
-    animation: slide-from-bottom 1s normal ease-in-out;
+    @include slide-y-generator("slide-from-top-50", 50px);
+    animation: slide-from-top-50 1s normal ease-in-out;
     bottom: 0;
     right: 0;
     &::after {

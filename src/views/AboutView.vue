@@ -37,7 +37,11 @@ import TimelineComponent from "../components/TimelineComponent.vue";
         scope="global"
       >
         <template #onyxStudioLink>
-          <a href="https://onyx-studio.fr" rel="noopener noreferrer">
+          <a
+            class="link link--fancy"
+            href="https://onyx-studio.fr"
+            rel="noopener noreferrer"
+          >
             Onyx Studio
           </a>
         </template>

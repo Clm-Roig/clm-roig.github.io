@@ -12,7 +12,9 @@ const { grottocenter } = projects;
   </div>
   <section class="under-construction">
     <p>⚠ {{ $t("under-construction") }} ⚠</p>
-    <router-link to="/">{{ $t("back-to-projects") }}</router-link>
+    <router-link class="link link--fancy" to="/">{{
+      $t("back-to-projects")
+    }}</router-link>
   </section>
 </template>
 
