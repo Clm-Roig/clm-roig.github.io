@@ -22,10 +22,13 @@ import TimelineComponent from "../components/TimelineComponent.vue";
   </figure>
 
   <div class="about-me">
-    <!-- eslint-disable-next-line vue/no-v-html -->
-    <p class="about-me__text" v-html="$t('about.part1')" />
-
-    <TimelineComponent />
+    <div class="about-me__block-1">
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <p class="about-me__text" v-html="$t('about.part1')" />
+      <div class="about-me__timeline">
+        <TimelineComponent />
+      </div>
+    </div>
 
     <div class="about-me__block-2">
       <!-- eslint-disable-next-line vue/no-v-html -->
@@ -69,9 +72,22 @@ import TimelineComponent from "../components/TimelineComponent.vue";
 
 .about-me {
   margin: auto;
-  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   &__text:first-child {
     margin-top: 0;
+  }
+  &__block-1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    & p {
+      flex: 1 650px;
+    }
+  }
+  &__timeline {
+    flex: 1 650px;
   }
   &__block-2 {
     display: flex;

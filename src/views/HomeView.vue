@@ -3,6 +3,7 @@ import SkillsView from "./SkillsView.vue";
 import ProjectsView from "./ProjectsView.vue";
 import ContactView from "./ContactView.vue";
 import AboutView from "./AboutView.vue";
+import Section from "../components/Section.vue";
 </script>
 
 <template>
@@ -11,19 +12,19 @@ import AboutView from "./AboutView.vue";
     <p class="header__what-i-am">{{ $t("header.whatIAm") }}</p>
   </header>
 
-  <section id="skills" class="section--bg-dark">
+  <Section id="skills" dark-bg>
     <SkillsView />
-  </section>
+  </Section>
 
-  <section id="projects">
+  <Section id="projects">
     <ProjectsView />
-  </section>
-  <section id="about" class="section--bg-dark">
+  </Section>
+  <Section id="about" dark-bg>
     <AboutView />
-  </section>
-  <section id="contact">
+  </Section>
+  <Section id="contact">
     <ContactView />
-  </section>
+  </Section>
 </template>
 
 <style scoped lang="scss">
@@ -52,12 +53,5 @@ import AboutView from "./AboutView.vue";
       font-size: 2.5rem;
     }
   }
-}
-
-section {
-  padding: 32px $sidebar-width;
-}
-.section--bg-dark {
-  background-color: $black;
 }
 </style>

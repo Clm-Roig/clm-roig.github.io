@@ -35,6 +35,5 @@ $breakpoint: 1000px;
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin: 0 16px;
 }
 </style>
