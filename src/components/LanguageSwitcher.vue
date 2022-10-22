@@ -32,10 +32,7 @@ defineProps<{
     margin-right: 8px;
   }
   &__select {
-    height: 80%;
+    border: none;
   }
-}
-select {
-  border: none;
 }
 </style>
