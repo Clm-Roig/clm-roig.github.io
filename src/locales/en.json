@@ -15,7 +15,7 @@
   "DBMS": "DBMS",
   "Misc": "Misc",
   "change-language:": "Change language:",
-  "back-to-projects": "Back to the projects list",
+  "back-to-projects": "Back to the project list",
   "features": "features",
   "presentation": "presentation",
   "technical-overview": "technical overview",
@@ -26,7 +26,32 @@
     "section-title": "Projects",
     "suivie": {
       "title": "SuiVie",
-      "description": "SuiVie is a web application inspired by the Bullet Journal's trackers tool. It aims to track your habits like sports, food, hygiene, self-care, expenses... Even if it works on desktop, it is designed for mobile devices. I work alone on this project."
+      "description": "SuiVie is a web application inspired by the Bullet Journal's trackers tool. It aims to track your habits like sports, food, hygiene, self-care, expenses... Even if it works on desktop, it is designed for mobile devices. I work alone on this project.",
+      "details": {
+        "part1": "SuiVie is a web application inspired by the habit tracking tool of a bullet journal. It aims to track your habits such as sports, food, hygiene, personal care, expenses...",
+        "part2": "The website is developed mainly for mobile (a desktop version will be released soon).",
+        "part3": "This project was created for two reasons:",
+        "reason1": "I was looking to develop an application in React using some tools I wanted to learn (TypeScript, Cypress, Recharts in particular).",
+        "reason2": "I like statistics and I used to organise my life around 2 productivity tools: todo lists and the calendar. Thanks to them, I could efficiently organise and plan my one-off events. To complement them, I wanted a tool that would give me an overview of my habits",
+        "feat1": "Create a tracker with a name, start date, colour, duration, frequency and goals",
+        "feat2": "Validate a tracker (partially or completely) today or in the past",
+        "feat3": "Hide a tracker for a day if you are sure you won't validate it or if you want to concentrate on other trackers",
+        "feat4": "View tracker statistics by week, month and year",
+        "feat5": "Archive, delete or edit your trackers at any time",
+        "feat6": "Dark or light theme available",
+        "tech1": "The application uses <b>React, TypeScript, MUI, Framer, Redux and Recharts</b>. It is tested using <b>Jest</b> for unit testing (100% coverage on reducers) and <b>Cypress</b> for functional testing. All code is formatted using <b>Prettier</b> and follows <b>ESLint</b> recommendations.",
+        "tech2": "The development of the application takes advantage of the numerous tools available on <b>GitHub</b>. A <b>Kanban</b> board defines the features to be developed in order of priority, issues are created and then resolved within pull requests. Finally, a <b>CI/CD pipeline</b> automatically tests and deploys the code via a <b>GitHub Action</b>."
+      },
+      "images": {
+        "home": "Home page",
+        "trackers": "Tracker list",
+        "custom-validate": "Partial validation",
+        "create": "Tracker creation",
+        "dark-mode": "Dark theme",
+        "manage": "Tracker management",
+        "stats": "Statistics",
+        "settings": "Settings"
+      }
     },
     "grottocenter": {
       "title": "Grottocenter",
