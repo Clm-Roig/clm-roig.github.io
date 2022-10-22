@@ -1,14 +1,13 @@
-$black: #080f0f;
-$white: #f8f1ff;
+$black: #091316;
+$white: #f7fff7;
 $text-color: $white;
 $background-color: $black;
 
-$primary-color: #74e274;
-$primary-color-light: lighten($primary-color, 10%);
-$primary-color-dark: darken($primary-color, 10%);
+$primary-color: #67b654;
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
 
-$secondary-color: #984447;
-$secondary-color-light: #db504a;
+$secondary-color: #b6524e;
 
 $border-radius: 4px;
 $sidebar-width: 28px;

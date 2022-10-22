@@ -14,7 +14,7 @@ defineProps<{
 .section {
   padding: calc($sidebar-width + 4px);
   &--dark-bg {
-    background-color: $black;
+    background-color: darken($black, 1%);
   }
   @media screen and (min-width: 1000px) {
     padding: calc(2 * $sidebar-width);
