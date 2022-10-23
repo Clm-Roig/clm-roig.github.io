@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import type { Image } from "../models/Images";
 
-const imgFolder = "/src/assets/images/";
+const getImagePath = (imageName: string) => {
+  return new URL(`/src/assets/images/${imageName}`, import.meta.url).href;
+};
 
 const props = defineProps<{
   image: Image;
 }>();
 
-const imgPath = imgFolder + props.image.path;
+const imgPath = getImagePath(props.image.path);
 </script>
 
 <template>
