@@ -1,25 +1,16 @@
 <script setup lang="ts">
-import type { Image } from "../models/Images";
-
-const imgFolder = "/src/assets/images/";
+import type { Image as ImageType } from "../models/Images";
+import Image from "./Image.vue";
 
 defineProps<{
-  images: Array<Image>;
+  images: Array<ImageType>;
 }>();
 </script>
 
 <template>
   <ul class="image-list">
     <li v-for="img in images" :key="img.path">
-      <figure>
-        <img
-          :src="imgFolder + img.path"
-          :alt="img.alt ? img.alt : img.caption"
-        />
-        <figcaption>
-          {{ img.caption }}
-        </figcaption>
-      </figure>
+      <Image :image="img" />
     </li>
   </ul>
 </template>
@@ -39,17 +30,10 @@ $flex-gap: 1rem;
     flex-basis: calc(25% - $flex-gap);
     min-width: 200px;
     max-width: 350px;
-    & img {
-      width: 100%;
-    }
+
     @media screen and (max-width: 950px) {
       flex-basis: calc(50% - $flex-gap);
     }
-  }
-  & figcaption {
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
   }
 }
 </style>

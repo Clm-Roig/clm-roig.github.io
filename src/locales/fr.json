@@ -20,6 +20,8 @@
   "presentation": "présentation",
   "technical-overview": "description technique",
   "under-construction": "En construction : revenez ultérieurement !",
+  "authentication": "authentification",
+  "test-setup": "Ajout de tests",
   "projects": {
     "built-with:": "Développé avec :",
     "more-info": "en savoir +",
@@ -55,7 +57,22 @@
     },
     "grottocenter": {
       "title": "Grottocenter",
-      "description": "Grottocenter est une base de données mondiale communautaire dédiée à la spéléologie et basée sur le système collaboratif wiki. Depuis 2019, en tant que freelance, j'ai travaillé sur différentes fonctionnalités (authentification, notifications, recherche avancée, soumission de documents) et j'ai contribué aux choix d'architecture, à la maintenance du code et ainsi qu'à de nombreux refactorings."
+      "description": "Grottocenter est une base de données mondiale communautaire dédiée à la spéléologie et basée sur le système collaboratif wiki. Depuis 2019, en tant que freelance, j'ai travaillé sur différentes fonctionnalités (authentification, notifications, recherche avancée, soumission de documents) et j'ai contribué aux choix d'architecture, à la maintenance du code et ainsi qu'à de nombreux refactorings.",
+      "details": {
+        "part1": "GrottoCenter est une base de données communautaire dédiée à la spéléologie et alimentée par des spéléologues sur le principe du Wiki, c'est-à-dire que le contenu du site peut être modifié par tous les utilisateurs enregistrés. Le site est géré et développé par l'association Wikicaves.",
+        "part2": "Wikicaves m'a confié le développement de nombreuses fonctionnalités depuis 2019 autant côté client que côté serveur.",
+        "auth": "Développement du  formulaire d'inscription, de connexion ainsi que la fonctionnalité de réinitialisation de mot de passe (token envoyé par mail via le service SES d'AWS).",
+        "test-setup": "Mise en place des tests sur l'API et du pipeline de tests automatique via GitHub Action. Écriture des tests pour monter à une couverture de 50% environ (en constante augmentation depuis).",
+        "notifications": "Système d'abonnement à un massif ou un pays pour recevoir des notifications quand une entité (cavité, organisation, document) est créée, modifiée ou supprimée sur celui-ci. Envoi de mail et affichage des notifications dans le client web.",
+        "client-tech": "Côté client, j'ai été amené à utiliser <b>React</b> (avec Redux et les Contextes) et <b>MUI</b>.",
+        "server-tech": "Côté serveur, c'est <b>Sails.js</b> qui est utilisé comme <b>API REST</b>, les tests sont effectués par <b>Mocha</b>, la documentation est générée par <b>Swagger</b> et la base de données (géographiques) repose sur <b>PostgreSQL</b>."
+      },
+      "images": {
+        "home": "Page d'accueil",
+        "auth": "Formulaire d'authentification",
+        "code-coverage": "Couverture du code à 57% (en octobre 2022)",
+        "notifications": "Vue succincte des notifications"
+      }
     }
   },
   "about": {

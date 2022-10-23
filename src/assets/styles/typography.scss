@@ -1,5 +1,5 @@
 html {
-  font-size: calc(0.6vw + 14px);
+  font-size: calc(0.5vw + 14px);
 }
 
 body {
@@ -53,6 +53,10 @@ h2:hover {
 
 h3 {
   font-size: 1.7rem;
+  margin-bottom: 16px;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 h4 {

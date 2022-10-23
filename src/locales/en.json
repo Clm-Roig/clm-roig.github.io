@@ -55,7 +55,13 @@
     },
     "grottocenter": {
       "title": "Grottocenter",
-      "description": "Grottocenter is a community world database dedicated to speleology and based on the wiki collaborative system. Since 2019, as a freelancer, I have worked on various features (authentication, notifications, advanced search, document submission) & I have been involved in the architecture choices, code maintenance and many refactorings."
+      "description": "Grottocenter is a community world database dedicated to speleology and based on the wiki collaborative system. Since 2019, as a freelancer, I have worked on various features (authentication, notifications, advanced search, document submission) & I have been involved in the architecture choices, code maintenance and many refactorings.",
+      "details": {
+        "part1": "GrottoCenter is a community database dedicated to speleology and fed by speleologists on the principle of Wiki, that is to say that the content of the site can be modified by all registered users. The website is managed and developed by the Wikicaves association."
+      },
+      "images": {
+        "home": "Home page"
+      }
     }
   },
   "about": {

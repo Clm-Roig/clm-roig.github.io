@@ -2,25 +2,23 @@
 import { projects } from "@/models/projects";
 import Section from "../../components/Section.vue";
 import ImageList from "../../components/ImageList.vue";
-import { useI18n } from "vue-i18n";
-import type { Image } from "../../models/Images";
 import BackToProjects from "../../components/BackToProjects.vue";
+import { AVAILABLE_PROJECTS, getImage } from "../../utils/getImage";
 const { suivie } = projects;
 
-const { t } = useI18n();
-const getImage = (imageName: string, imageExtension = "jpg") =>
-  ({
-    caption: t(`projects.suivie.images.${imageName}`),
-    path: `suivie/${imageName}.${imageExtension}`,
-  } as Image);
+const getSuivieImage = (imageName: string) =>
+  getImage(imageName, AVAILABLE_PROJECTS.suivie);
 
-const imageList1 = [getImage("home"), getImage("trackers")];
-const imageList2 = [getImage("custom-validate"), getImage("create")];
+const imageList1 = [getSuivieImage("home"), getSuivieImage("trackers")];
+const imageList2 = [
+  getSuivieImage("custom-validate"),
+  getSuivieImage("create"),
+];
 const imageList3 = [
-  getImage("dark-mode"),
-  getImage("manage"),
-  getImage("stats"),
-  getImage("settings"),
+  getSuivieImage("dark-mode"),
+  getSuivieImage("manage"),
+  getSuivieImage("stats"),
+  getSuivieImage("settings"),
 ];
 </script>
 
