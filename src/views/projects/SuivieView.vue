@@ -1,17 +1,31 @@
 <script setup lang="ts">
 import { projects } from "@/models/projects";
 import Section from "../../components/Section.vue";
+import ImageList from "../../components/ImageList.vue";
+import { useI18n } from "vue-i18n";
+import type { Image } from "../../models/Images";
+import BackToProjects from "../../components/BackToProjects.vue";
 const { suivie } = projects;
+
+const { t } = useI18n();
+const getImage = (imageName: string, imageExtension = "jpg") =>
+  ({
+    caption: t(`projects.suivie.images.${imageName}`),
+    path: `suivie/${imageName}.${imageExtension}`,
+  } as Image);
+
+const imageList1 = [getImage("home"), getImage("trackers")];
+const imageList2 = [getImage("custom-validate"), getImage("create")];
+const imageList3 = [
+  getImage("dark-mode"),
+  getImage("manage"),
+  getImage("stats"),
+  getImage("settings"),
+];
 </script>
 
 <template>
-  <Section dark-bg class="back-to-projects">
-    <router-link
-      class="link link--fancy"
-      :to="{ path: '/', hash: '#projects' }"
-      >{{ "< " + $t("back-to-projects") }}</router-link
-    >
-  </Section>
+  <BackToProjects dark-bg />
   <header class="header">
     <h1>
       <img
@@ -28,6 +42,7 @@ const { suivie } = projects;
       >{{ suivie.url }}</a
     >
   </header>
+
   <Section dark-bg>
     <h2>{{ $t("presentation") }}</h2>
     <div class="content">
@@ -40,34 +55,14 @@ const { suivie } = projects;
           <li>{{ $t("projects.suivie.details.reason2") }}</li>
         </ul>
       </div>
-      <div class="content__images image-list">
-        <figure>
-          <img src="/src/assets/images/suivie/home.jpg" />
-          <figcaption>{{ $t("projects.suivie.images.home") }}</figcaption>
-        </figure>
-        <figure>
-          <img src="/src/assets/images/suivie/trackers.jpg" />
-          <figcaption>{{ $t("projects.suivie.images.trackers") }}</figcaption>
-        </figure>
-      </div>
+      <ImageList :images="imageList1" />
     </div>
   </Section>
 
   <Section>
     <h2>{{ $t("features") }}</h2>
     <div class="content content--images-first content--align-center">
-      <div class="content__images image-list">
-        <figure>
-          <img src="/src/assets/images/suivie/custom-validate.jpg" />
-          <figcaption>
-            {{ $t("projects.suivie.images.custom-validate") }}
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="/src/assets/images/suivie/create.jpg" />
-          <figcaption>{{ $t("projects.suivie.images.create") }}</figcaption>
-        </figure>
-      </div>
+      <ImageList :images="imageList2" />
       <div class="content__text">
         <ul class="classic-ul">
           <li>{{ $t("projects.suivie.details.feat1") }}</li>
@@ -82,34 +77,7 @@ const { suivie } = projects;
   </Section>
 
   <Section>
-    <ul class="image-list">
-      <li>
-        <figure>
-          <img src="/src/assets/images/suivie/dark-mode.jpg" />
-          <figcaption>
-            {{ $t("projects.suivie.images.dark-mode") }}
-          </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="/src/assets/images/suivie/manage.jpg" />
-          <figcaption>{{ $t("projects.suivie.images.manage") }}</figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="/src/assets/images/suivie/stats.jpg" />
-          <figcaption>{{ $t("projects.suivie.images.stats") }}</figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="/src/assets/images/suivie/settings.jpg" />
-          <figcaption>{{ $t("projects.suivie.images.settings") }}</figcaption>
-        </figure>
-      </li>
-    </ul>
+    <ImageList :images="imageList3" />
   </Section>
 
   <Section dark-bg>
@@ -124,91 +92,12 @@ const { suivie } = projects;
     </div>
   </Section>
 
-  <Section class="back-to-projects">
-    <router-link
-      class="link link--fancy"
-      :to="{ path: '/', hash: '#projects' }"
-      >{{ "< " + $t("back-to-projects") }}</router-link
-    >
-  </Section>
+  <BackToProjects />
 </template>
 
 <style scoped lang="scss">
-$flex-gap: 1rem;
-
-.header {
-  padding: 16px 0;
-  text-align: center;
-}
-
-.content {
-  display: flex;
-  gap: $flex-gap;
-  flex-wrap: wrap;
-  &__text {
-    flex: 1;
-    text-align: justify;
-  }
-  &__images {
-    flex: 1;
-  }
-  @media screen and (max-width: 1250px) {
-    flex-direction: column;
-  }
-  &--images-first {
-    @media screen and (max-width: 1250px) {
-      flex-direction: column-reverse;
-    }
-  }
-  &--align-center {
-    align-items: center;
-  }
-}
-.image-list {
-  display: flex;
-  gap: $flex-gap;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  & figure {
-    list-style-type: none;
-    flex: 1;
-    flex-basis: calc(25% - $flex-gap);
-    min-width: 200px;
-    max-width: 350px;
-    & img {
-      width: 100%;
-    }
-    @media screen and (max-width: 950px) {
-      flex-basis: calc(50% - $flex-gap);
-    }
-  }
-  & figcaption {
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-  }
-}
+@import "../../assets/styles/components/project-view.scss";
 .logo {
-  margin: auto;
-  width: 50vw;
-  max-width: 200px;
   filter: invert(1);
-}
-
-p {
-  margin-bottom: 16px;
-}
-
-.back-to-projects {
-  padding: 32px 0;
-  text-align: center;
-}
-
-.classic-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  list-style-type: disclosure-closed;
-  padding-left: 2rem;
 }
 </style>

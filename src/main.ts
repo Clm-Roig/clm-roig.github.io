@@ -13,6 +13,7 @@ import "./assets/styles/main.scss";
 
 const i18n = createI18n({
   allowComposition: true,
+  legacy: false,
   locale: "fr",
   messages: {
     fr,
