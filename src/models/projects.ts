@@ -6,7 +6,8 @@ export const projects = {
     url: "https://clm-roig.github.io/suivie",
   },
   grottocenter: {
-    builtWith: "React - MUI - Redux - Jest - Storybook | Sails.js - PostGreSQL",
+    builtWith:
+      "React - MUI - Redux - Storybook ｜ Sails.js - Mocha - PostGreSQL",
     imgPath: "grottocenter.jpg",
     internalSlug: "grottocenter",
     url: "https://grottocenter.org",
