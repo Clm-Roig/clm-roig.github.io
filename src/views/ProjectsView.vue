@@ -34,6 +34,7 @@ $breakpoint: 1000px;
 .projects {
   display: flex;
   flex-direction: column;
+  gap: $card-gap;
   padding-left: 0;
 }
 </style>
