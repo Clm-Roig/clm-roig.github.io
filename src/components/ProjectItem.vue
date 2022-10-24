@@ -97,7 +97,7 @@ $breakpoint: 820px;
     border-radius: $border-radius;
     flex: 2;
     max-height: 400px;
-    object-fit: contain;
+    max-width: 100%;
     transition: all 0.5s ease-in-out;
     z-index: 2;
     &--right {
