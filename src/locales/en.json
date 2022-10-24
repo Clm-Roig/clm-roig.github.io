@@ -7,19 +7,15 @@
     "level-1": "novice",
     "level-2": "basic knowledge",
     "level-3": "confirmed knowledge",
-    "level-4": "advanced knowledge"
+    "level-4": "advanced knowledge",
+    "categories": {
+      "Back-end": "Back-end",
+      "Front-end": "Front-end",
+      "Test / CI": "Test / CI",
+      "DBMS": "DBMS",
+      "Misc": "Misc"
+    }
   },
-  "Back-end": "Back-end",
-  "Front-end": "Front-end",
-  "Test / CI": "Test / CI",
-  "DBMS": "DBMS",
-  "Misc": "Misc",
-  "change-language:": "Change language:",
-  "back-to-projects": "Back to the project list",
-  "features": "features",
-  "presentation": "presentation",
-  "technical-overview": "technical overview",
-  "under-construction": "Under construction : come back later!",
   "projects": {
     "built-with:": "Built with:",
     "more-info": "learn more",
@@ -82,5 +78,11 @@
     "text": "I'm currently looking for a part-time job or mission (28h / week maximum) :)"
   },
   "built-using": "Website built using {vueLink}, {sassLink} and {vueI18nLink}",
-  "vue-framework": "the Vue.js framework"
+  "vue-framework": "the Vue.js framework",
+  "change-language:": "Change language:",
+  "back-to-projects": "Back to the project list",
+  "features": "features",
+  "presentation": "presentation",
+  "technical-overview": "technical overview",
+  "under-construction": "Under construction : come back later!"
 }

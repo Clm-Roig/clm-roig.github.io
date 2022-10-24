@@ -7,23 +7,15 @@
     "level-1": "novice",
     "level-2": "connaissances basiques",
     "level-3": "connaissances confirmées",
-    "level-4": "connaissances poussées"
+    "level-4": "connaissances poussées",
+    "categories": {
+      "Back-end": "Back-end",
+      "Front-end": "Front-end",
+      "Test / CI": "Test / CI",
+      "DBMS": "SGBD",
+      "Misc": "Divers"
+    }
   },
-  "Back-end": "Back-end",
-  "Front-end": "Front-end",
-  "Test / CI": "Test / CI",
-  "DBMS": "SGBD",
-  "Misc": "Divers",
-  "change-language:": "Changer de langue :",
-  "back-to-projects": "Revenir à la liste des projets",
-  "features": "fonctionnalités",
-  "presentation": "présentation",
-  "technical-overview": "description technique",
-  "under-construction": "En construction : revenez ultérieurement !",
-  "authentication": "authentification",
-  "test-setup": "Ajout de tests",
-  "advanced-search": "Recherche avancée",
-  "user-management": "Gestion des utilisateurs",
   "projects": {
     "built-with:": "Développé avec :",
     "more-info": "en savoir +",
@@ -63,7 +55,7 @@
       "details": {
         "part1": "GrottoCenter est une base de données communautaire dédiée à la spéléologie et alimentée par des spéléologues sur le principe du Wiki, c'est-à-dire que le contenu du site peut être modifié par tous les utilisateurs enregistrés. Le site est géré et développé par l'association Wikicaves.",
         "part2": "Wikicaves m'a confié le développement de nombreuses fonctionnalités depuis 2019 autant côté client que côté serveur.",
-        "auth": "Développement du  formulaire d'inscription, de connexion ainsi que la fonctionnalité de réinitialisation de mot de passe (token envoyé par mail via le service SES d'AWS).",
+        "auth": "Développement du formulaire d'inscription, de connexion ainsi que la fonctionnalité de réinitialisation de mot de passe (token envoyé par mail via le service SES d'AWS).",
         "test-setup": "Mise en place des tests sur l'API et du pipeline de tests automatique via GitHub Action. Écriture des tests pour monter à une couverture de 50% environ (en constante augmentation depuis).",
         "notifications": "Système d'abonnement à un massif ou un pays pour recevoir des notifications quand une entité (cavité, organisation, document) est créée, modifiée ou supprimée sur celui-ci. Envoi de mail et affichage des notifications dans le client web.",
         "advanced-search": "Recherche avancée sur plusieurs entités (cavités, organisations, massifs et documents) utilisant Elasticsearch.",
@@ -98,6 +90,16 @@
     "section-title": "Me contacter",
     "text": "Je cherche actuellement un emploi ou une mission à hauteur de 28h / semaine maximum :)"
   },
+  "advanced-search": "Recherche avancée",
+  "authentication": "authentification",
+  "back-to-projects": "Revenir à la liste des projets",
   "built-using": "Site développé en utilisant {vueLink}, {sassLink} et {vueI18nLink}",
+  "change-language:": "Changer de langue :",
+  "features": "fonctionnalités",
+  "notifications": "notifications",
+  "presentation": "présentation",
+  "technical-overview": "description technique",
+  "test-setup": "Ajout de tests",
+  "user-management": "Gestion des utilisateurs",
   "vue-framework": "le framework Vue.js"
 }
