@@ -64,6 +64,20 @@ const getGrottocenterImage = (imageName: string, extension?: string) =>
         </div>
         <Image :image="getGrottocenterImage('code-coverage')" />
       </Card>
+
+      <Card :title="$t('advanced-search')" class="card">
+        <div class="text card__text">
+          {{ $t("projects.grottocenter.details.advanced-search") }}
+        </div>
+        <Image :image="getGrottocenterImage('advanced-search', 'gif')" />
+      </Card>
+
+      <Card :title="$t('user-management')" class="card">
+        <div class="text card__text">
+          {{ $t("projects.grottocenter.details.user-management") }}
+        </div>
+        <Image :image="getGrottocenterImage('user-management', 'gif')" />
+      </Card>
     </div>
   </Section>
 

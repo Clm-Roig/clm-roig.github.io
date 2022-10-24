@@ -22,6 +22,8 @@
   "under-construction": "En construction : revenez ultérieurement !",
   "authentication": "authentification",
   "test-setup": "Ajout de tests",
+  "advanced-search": "Recherche avancée",
+  "user-management": "Gestion des utilisateurs",
   "projects": {
     "built-with:": "Développé avec :",
     "more-info": "en savoir +",
@@ -64,6 +66,8 @@
         "auth": "Développement du  formulaire d'inscription, de connexion ainsi que la fonctionnalité de réinitialisation de mot de passe (token envoyé par mail via le service SES d'AWS).",
         "test-setup": "Mise en place des tests sur l'API et du pipeline de tests automatique via GitHub Action. Écriture des tests pour monter à une couverture de 50% environ (en constante augmentation depuis).",
         "notifications": "Système d'abonnement à un massif ou un pays pour recevoir des notifications quand une entité (cavité, organisation, document) est créée, modifiée ou supprimée sur celui-ci. Envoi de mail et affichage des notifications dans le client web.",
+        "advanced-search": "Recherche avancée sur plusieurs entités (cavités, organisations, massifs et documents) utilisant Elasticsearch.",
+        "user-management": "Interface permettant aux administrateurs de nommer ou de révoquer d'autres administrateurs, modérateurs ou leaders.",
         "client-tech": "Côté client, j'ai été amené à utiliser <b>React</b> (avec Redux et les Contextes) et <b>MUI</b>.",
         "server-tech": "Côté serveur, c'est <b>Sails.js</b> qui est utilisé comme <b>API REST</b>, les tests sont effectués par <b>Mocha</b>, la documentation est générée par <b>Swagger</b> et la base de données (géographiques) repose sur <b>PostgreSQL</b>."
       },
@@ -71,7 +75,9 @@
         "home": "Page d'accueil",
         "auth": "Formulaire d'authentification",
         "code-coverage": "Couverture du code à 57% (en octobre 2022)",
-        "notifications": "Vue succincte des notifications"
+        "notifications": "Vue succincte des notifications",
+        "advanced-search": "Formulaire de recherche d'une entrée de cavité",
+        "user-management": "Ajout d'un administrateur"
       }
     }
   },
