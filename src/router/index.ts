@@ -10,16 +10,19 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      meta: { title: "Clément ROIG - Web developer" },
     },
     {
       path: "/projects/suivie",
       name: "Suivie",
       component: SuivieView,
+      meta: { title: "Clément ROIG - SuiVie" },
     },
     {
       path: "/projects/grottocenter",
       name: "Grottocenter",
       component: GrottocenterView,
+      meta: { title: "Clément ROIG - Grottocenter" },
     },
   ],
   scrollBehavior(to, from, savedPosition) {
@@ -33,6 +36,11 @@ const router = createRouter({
     }
     return { top: 0 };
   },
+});
+
+router.beforeEach((toRoute, fromRoute, next) => {
+  window.document.title = toRoute.meta.title as string;
+  next();
 });
 
 export default router;
