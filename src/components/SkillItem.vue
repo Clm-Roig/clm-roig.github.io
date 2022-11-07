@@ -17,7 +17,7 @@ defineProps<{
       class="skill__category"
       :style="{ 'text-decoration-color': skill.category.color }"
     >
-      {{ $t("skills.categories." + skill.category.name) }}
+      {{ $t("skills.categories['" + skill.category.name + "']") }}
     </p>
   </li>
 </template>

@@ -16,7 +16,9 @@ const state = reactive({
       :key="category.name"
       class="category"
     >
-      <h3 class="category__title">{{ $t(category.name) }}</h3>
+      <h3 class="category__title">
+        {{ $t("skills.categories['" + category.name + "']") }}
+      </h3>
       <ul class="category__skill-list">
         <SkillItem
           v-for="skill in state.skills.filter(
