@@ -6,13 +6,14 @@ export const skills = [
   { name: "CSS 3", level: 3, category: SkillCategories.FRONT_END },
   { name: "HTML 5", level: 3, category: SkillCategories.FRONT_END },
 
-  { name: "Vue.js", level: 1, category: SkillCategories.FRONT_END },
-  { name: "SCSS", level: 1, category: SkillCategories.FRONT_END },
-  { name: "BEM", level: 1, category: SkillCategories.FRONT_END },
+  { name: "Vue.js", level: 2, category: SkillCategories.FRONT_END },
+  { name: "SCSS", level: 2, category: SkillCategories.FRONT_END },
+  { name: "BEM", level: 2, category: SkillCategories.FRONT_END },
+  { name: "Framer", level: 1, category: SkillCategories.FRONT_END },
 
   { name: "Github Actions", level: 3, category: SkillCategories.TEST_CI },
   { name: "Jest", level: 3, category: SkillCategories.TEST_CI },
-  { name: "TypeScript", level: 3, category: SkillCategories.MISC },
+  { name: "Mocha", level: 2, category: SkillCategories.TEST_CI },
   { name: "Cypress", level: 2, category: SkillCategories.TEST_CI },
 
   { name: "Sails.js", level: 3, category: SkillCategories.BACK_END },
@@ -23,6 +24,7 @@ export const skills = [
   { name: "SQL", level: 2, category: SkillCategories.DBMS },
   { name: "MongoDB", level: 1, category: SkillCategories.DBMS },
 
+  { name: "TypeScript", level: 3, category: SkillCategories.MISC },
   { name: "Adobe Photoshop", level: 1, category: SkillCategories.MISC },
   { name: "Adobe Premiere", level: 1, category: SkillCategories.MISC },
   { name: "Docker", level: 2, category: SkillCategories.MISC },
