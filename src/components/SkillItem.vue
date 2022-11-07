@@ -50,6 +50,7 @@ defineProps<{
   &__h3 {
     font-size: 1rem;
     line-height: 1rem;
+    margin-bottom: 0;
     text-align: center;
     z-index: 1;
     @media screen and (max-width: 600px) {
