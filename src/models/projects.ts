@@ -12,4 +12,10 @@ export const projects = {
     internalSlug: "grottocenter",
     url: "https://grottocenter.org",
   },
+  mizk: {
+    builtWith: "React - Chakra UI",
+    imgPath: "mizk.jpg",
+    internalSlug: "mizk",
+    url: "https://clm-roig.github.io/mizk/",
+  },
 };

@@ -2,7 +2,7 @@
 import ProjectItem from "../components/ProjectItem.vue";
 import { projects } from "@/models/projects";
 
-const { suivie, grottocenter } = projects;
+const { suivie, grottocenter, mizk } = projects;
 </script>
 
 <template>
@@ -25,6 +25,14 @@ const { suivie, grottocenter } = projects;
       :right-img="true"
       :title="$t('projects.grottocenter.title')"
       :url="grottocenter.url"
+    />
+    <ProjectItem
+      :built-with="mizk.builtWith"
+      :description="$t('projects.mizk.description')"
+      :img-path="mizk.imgPath"
+      :internal-slug="mizk.internalSlug"
+      :title="$t('projects.mizk.title')"
+      :url="mizk.url"
     />
   </ul>
 </template>

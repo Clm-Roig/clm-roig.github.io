@@ -3,6 +3,7 @@ import { useI18n } from "vue-i18n";
 
 export enum AVAILABLE_PROJECTS {
   grottocenter = "grottocenter",
+  mizk = "mizk",
   suivie = "suivie",
 }
 

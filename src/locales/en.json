@@ -71,6 +71,10 @@
         "advanced-search": "Cavity entrance search form",
         "user-management": "Adding an administrator"
       }
+    },
+    "mizk": {
+      "title": "Mizk",
+      "description": "Mizk is a web application providing various multimedia and useful tools such as calculators, image processors or encoders / decoders."
     }
   },
   "about": {

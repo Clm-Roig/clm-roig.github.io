@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import GrottocenterView from "../views/projects/GrottocenterView.vue";
 import HomeView from "../views/HomeView.vue";
 import SuivieView from "../views/projects/SuivieView.vue";
+import MizkView from "../views/projects/MizkView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,12 @@ const router = createRouter({
       name: "Grottocenter",
       component: GrottocenterView,
       meta: { title: "Clément ROIG - Grottocenter" },
+    },
+    {
+      path: "/projects/mizk",
+      name: "Mizk",
+      component: MizkView,
+      meta: { title: "Clément ROIG - Mizk" },
     },
   ],
   scrollBehavior(to, from, savedPosition) {

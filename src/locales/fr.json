@@ -71,6 +71,10 @@
         "advanced-search": "Formulaire de recherche d'une entrée de cavité",
         "user-management": "Ajout d'un administrateur"
       }
+    },
+    "mizk": {
+      "title": "Mizk",
+      "description": "Mizk est une application web qui fournit divers outils multimédias pratiques et simples comme des calculateurs, des traitements d'image ou des encoders / décodeurs."
     }
   },
   "about": {
