@@ -35,7 +35,7 @@
         "feat4": "View tracker statistics by week, month and year",
         "feat5": "Archive, delete or edit your trackers at any time",
         "feat6": "Dark or light theme available",
-        "tech1": "The application uses <b>React, TypeScript, MUI, Framer, Redux and Recharts</b>. It is tested using <b>Jest</b> for unit testing (100% coverage on reducers) and <b>Cypress</b> for functional testing. All code is formatted using <b>Prettier</b> and follows <b>ESLint</b> recommendations.",
+        "tech1": "The application uses <b>React, TypeScript, MUI, Framer, Redux and Recharts</b>. It is tested using <b>Jest</b> for unit testing (100% coverage on reducers) and <b>Cypress</b> for functional testing. The code is formatted using <b>Prettier</b> and follows <b>ESLint</b> recommendations.",
         "tech2": "The development of the application takes advantage of the numerous tools available on <b>GitHub</b>. A <b>Kanban</b> board defines the features to be developed in order of priority, issues are created and then resolved within pull requests. Finally, a <b>CI/CD pipeline</b> automatically tests and deploys the code via a <b>GitHub Action</b>."
       },
       "images": {
@@ -74,7 +74,22 @@
     },
     "mizk": {
       "title": "Mizk",
-      "description": "Mizk is a web application providing various multimedia and useful tools such as calculators, image processors or encoders / decoders."
+      "description": "Mizk is a web application providing various multimedia and useful tools such as calculators, image processors or encoders / decoders.",
+      "details": {
+        "part1": "Mizk is a project that aims to bring together on a single site various simple tools for file manipulation, conversions, image editing, etc.",
+        "tech1": "The application uses <b>React</b> (+ <b>Typescript</b>) with <b>Chakra UI</b>. The code is formatted using <b>Prettier</b> and follows <b>ESLint</b> recommendations.",
+        "tech2": "The development of the application takes advantage of the numerous tools available on <b>GitHub</b>. Issues are created and then resolved via pull requests. Finally, a <b>CI/CD pipeline</b> automatically tests and deploys the code via a <b>GitHub Action</b>.",
+        "feat1": "Duration calculator",
+        "feat2": "Base64 encoder / decoder",
+        "feat3": "Color converter",
+        "feat4": "Image converter",
+        "feat5": "Image cropper"
+      },
+      "images": {
+        "menu": "Left side menu",
+        "colors": "Color converter",
+        "image-crop": "Image cropper"
+      }
     }
   },
   "about": {

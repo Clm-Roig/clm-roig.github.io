@@ -74,7 +74,22 @@
     },
     "mizk": {
       "title": "Mizk",
-      "description": "Mizk est une application web qui fournit divers outils multimédias pratiques et simples comme des calculateurs, des traitements d'image ou des encoders / décodeurs."
+      "description": "Mizk est une application web qui fournit divers outils multimédias pratiques et simples comme des calculateurs, des traitements d'image ou des encoders / décodeurs.",
+      "details": {
+        "part1": "Mizk est un projet visant à réunir sur un même site divers outils simples de manipulation de fichiers, de conversions, d'édition d'images, etc.",
+        "tech1": "Le site utilise <b>React</b> (+ <b>Typescript</b>) avec <b>Chakra UI</b>. Le code est testé à l'aide de <b>Vitest</b>, formatté grâce à <b>Prettier</b> et suit les recommendations d'<b>ESLint</b>.",
+        "tech2": "Le développement de l'application exploite les nombreux outils disponibles sur <b>GitHub</b>. Des issues sont créées pour chaque fonctionnalité puis résolues via des pull requests. Enfin, un <b>pipeline CI/CD</b> teste et déploie automatiquement le code via une <b>GitHub Action</b>.",
+        "feat1": "Calculateur de durée",
+        "feat2": "Encodeur / décodeur en Base64",
+        "feat3": "Convertisseur de couleur",
+        "feat4": "Convertisseur d'image",
+        "feat5": "Rogneur d'image"
+      },
+      "images": {
+        "menu": "Menu latéral gauche",
+        "colors": "Convertisseur de couleur",
+        "image-crop": "Rogneur d'image"
+      }
     }
   },
   "about": {
