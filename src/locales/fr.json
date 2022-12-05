@@ -77,18 +77,24 @@
       "description": "Mizk est une application web qui fournit divers outils multimédias pratiques et simples comme des calculateurs, des traitements d'image ou des encoders / décodeurs.",
       "details": {
         "part1": "Mizk est un projet visant à réunir sur un même site divers outils simples de manipulation de fichiers, de conversions, d'édition d'images, etc.",
+        "part2": "Les outils proposés se veulent <b>simples</b>, <b>rapides</b> et <b>faciles à utiliser</b>. Sur d'autres sites du même genre, il faut souvent appuyer sur un bouton pour calculer le résultat d'une opération. Sur Mizk, les calculs sont effectués en temps réel, au rythme de la saisie de l'utilisateur. Des boutons de copie des résultats sont également présents pour récupérer la valeur d'une conversion ou d'un calcul.",
         "tech1": "Le site utilise <b>React</b> (+ <b>Typescript</b>) avec <b>Chakra UI</b>. Le code est testé à l'aide de <b>Vitest</b>, formatté grâce à <b>Prettier</b> et suit les recommendations d'<b>ESLint</b>.",
         "tech2": "Le développement de l'application exploite les nombreux outils disponibles sur <b>GitHub</b>. Des issues sont créées pour chaque fonctionnalité puis résolues via des pull requests. Enfin, un <b>pipeline CI/CD</b> teste et déploie automatiquement le code via une <b>GitHub Action</b>.",
         "feat1": "Calculateur de durée",
         "feat2": "Encodeur / décodeur en Base64",
         "feat3": "Convertisseur de couleur",
         "feat4": "Convertisseur d'image",
-        "feat5": "Rogneur d'image"
+        "feat5": "Rogneur d'image",
+        "feat6": "Remplacer de texte",
+        "feat7": "Convertisseur de températures",
+        "feat8": "Compteur de mots",
+        "feat9": "Barre de recherche d'outils"
       },
       "images": {
         "menu": "Menu latéral gauche",
         "colors": "Convertisseur de couleur",
-        "image-crop": "Rogneur d'image"
+        "image-crop": "Rogneur d'image",
+        "string-replacer": "Remplaceur de texte"
       }
     }
   },

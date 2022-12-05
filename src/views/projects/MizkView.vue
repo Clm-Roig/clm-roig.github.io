@@ -10,7 +10,10 @@ const getMizkImage = (imageName: string) =>
   getImage(imageName, AVAILABLE_PROJECTS.mizk);
 
 const imageList1 = [getMizkImage("menu"), getMizkImage("colors")];
-const imageList2 = [getMizkImage("image-crop")];
+const imageList2 = [
+  getMizkImage("image-crop"),
+  getMizkImage("string-replacer"),
+];
 </script>
 
 <template>
@@ -31,6 +34,8 @@ const imageList2 = [getMizkImage("image-crop")];
     <div class="content">
       <div class="content__text">
         <p>{{ $t("projects.mizk.details.part1") }}</p>
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <p v-html="$t('projects.mizk.details.part2')"></p>
       </div>
       <ImageList :images="imageList1" />
     </div>
@@ -42,11 +47,9 @@ const imageList2 = [getMizkImage("image-crop")];
       <ImageList :images="imageList2" />
       <div class="content__text">
         <ul class="classic-ul">
-          <li>{{ $t("projects.mizk.details.feat1") }}</li>
-          <li>{{ $t("projects.mizk.details.feat2") }}</li>
-          <li>{{ $t("projects.mizk.details.feat3") }}</li>
-          <li>{{ $t("projects.mizk.details.feat4") }}</li>
-          <li>{{ $t("projects.mizk.details.feat5") }}</li>
+          <li v-for="x in [...Array(9).keys()].map((x) => x + 1)" :key="x">
+            {{ $t("projects.mizk.details.feat" + x) }}
+          </li>
         </ul>
       </div>
     </div>

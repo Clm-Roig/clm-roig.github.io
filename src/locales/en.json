@@ -77,18 +77,24 @@
       "description": "Mizk is a web application providing various multimedia and useful tools such as calculators, image processors or encoders / decoders.",
       "details": {
         "part1": "Mizk is a project that aims to bring together on a single site various simple tools for file manipulation, conversions, image editing, etc.",
+        "part2": "The tools offered are intended to be <b>simple</b>, <b>fast</b> and <b>easy to use</b>. On other sites of the same kind, it is often necessary to press a button to calculate the result of an operation. On Mizk, calculations are carried out in real time, at the pace of the user's input. Copy buttons for the results are also present to retrieve the value of a conversion or calculation.",
         "tech1": "The application uses <b>React</b> (+ <b>Typescript</b>) with <b>Chakra UI</b>. The code is formatted using <b>Prettier</b> and follows <b>ESLint</b> recommendations.",
         "tech2": "The development of the application takes advantage of the numerous tools available on <b>GitHub</b>. Issues are created and then resolved via pull requests. Finally, a <b>CI/CD pipeline</b> automatically tests and deploys the code via a <b>GitHub Action</b>.",
         "feat1": "Duration calculator",
         "feat2": "Base64 encoder / decoder",
         "feat3": "Color converter",
         "feat4": "Image converter",
-        "feat5": "Image cropper"
+        "feat5": "Image cropper",
+        "feat6": "String replacer",
+        "feat7": "Temperature converter",
+        "feat8": "Word counter",
+        "feat9": "Tool search bar"
       },
       "images": {
         "menu": "Left side menu",
         "colors": "Color converter",
-        "image-crop": "Image cropper"
+        "image-crop": "Image cropper",
+        "string-replacer": "String replacer"
       }
     }
   },
