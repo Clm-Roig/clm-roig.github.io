@@ -28,7 +28,7 @@ defineProps<{
               <button>{{ $t("projects.more-info") }}</button>
             </router-link>
           </div>
-          <p class="project__description">
+          <p>
             {{ description }}
           </p>
           <p class="project__build-with">
@@ -82,9 +82,6 @@ $breakpoint: 820px;
     @media screen and (max-width: $breakpoint) {
       padding-top: 0;
     }
-  }
-  &__description {
-    text-indent: 24px;
   }
   &__build-with {
     margin-top: 8px;

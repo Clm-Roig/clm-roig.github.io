@@ -12,7 +12,7 @@ import Section from "../components/Section.vue";
     <p class="header__what-i-am">{{ $t("header.whatIAm") }}</p>
   </header>
 
-  <Section id="skills" dark-bg>
+  <Section id="skills" dark-bg full-width>
     <SkillsView />
   </Section>
 
