@@ -74,7 +74,7 @@
     },
     "mizk": {
       "title": "Mizk",
-      "description": "Mizk est une application web qui fournit divers outils multimédias pratiques et simples comme des calculateurs, des traitements d'image ou des encoders / décodeurs.",
+      "description": "Mizk est une application web qui fournit divers outils multimédias pratiques et simples comme des calculateurs, des traitements d'image ou des encodeurs / décodeurs.",
       "details": {
         "part1": "Mizk est un projet visant à réunir sur un même site divers outils simples de manipulation de fichiers, de conversions, d'édition d'images, etc.",
         "part2": "Les outils proposés se veulent <b>simples</b>, <b>rapides</b> et <b>faciles à utiliser</b>. Sur d'autres sites du même genre, il faut souvent appuyer sur un bouton pour calculer le résultat d'une opération. Sur Mizk, les calculs sont effectués en temps réel, au rythme de la saisie de l'utilisateur. Des boutons de copie des résultats sont également présents pour récupérer la valeur d'une conversion ou d'un calcul.",
