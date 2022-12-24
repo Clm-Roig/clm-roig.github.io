@@ -5,7 +5,7 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
 <template>
   <h2>{{ $t("contact.section-title") }}</h2>
   <div class="contact">
-    <p>{{ $t("contact.text") }}</p>
+    <!-- <p>{{ $t("contact.text") }}</p> -->
 
     <div class="mail-resume">
       <a
