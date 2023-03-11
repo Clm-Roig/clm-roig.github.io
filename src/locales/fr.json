@@ -103,7 +103,7 @@
     "greeting": "Bien le bonjour, je m'appelle {name} !",
     "part1": "Je suis un être humain et aussi un développeur web. J'aime concevoir des <b>interfaces web agréables et esthétiques, mais aussi des API REST utiles et pratiques pour les autres développeurs</b>. J'ai obtenu mon <b>diplôme d'ingénieur en informatique et gestion</b> en 2019. Je suis constamment en train d'apprendre et de m'améliorer pour parfaire le code que je produis : le refactoring, la réduction des répétitions, les tests et la documentation forment une <u>partie essentielle de mon workflow</u>.",
     "part2": "Je m'épanouis en développant des solutions pour des organisations pertinentes selon moi, qui œuvrent dans des domaines comme <b>l'éducation, la santé, la protection de l'environnement, la lutte contre le changement climatique ou le partage des connaissances</b>.",
-    "part3": "Quand je ne suis pas en train de peaufiner une interface web au pixel près ou de pousser un refactoring d'API sur GitHub, je fais de la musique à l'{onyxStudioLink}. Vous me trouverez également en randonnée dans les Pyrénées ariégeoises ou entrain de cueillir des champignons et des châtaignes.",
+    "part3": "Quand je ne suis pas en train de peaufiner une interface web au pixel près ou de pousser un refactoring d'API sur GitHub, je fais de la musique à l'{onyxStudioLink}. Vous me trouverez également en randonnée dans les Pyrénées ariégeoises ou en train de cueillir des champignons et des châtaignes.",
     "timeline": {
       "dut": "D.U.T Informatique",
       "engineer-degree": "Ingénieur en Informatique",
