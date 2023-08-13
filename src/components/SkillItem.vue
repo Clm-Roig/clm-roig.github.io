@@ -28,14 +28,13 @@ defineProps<{
 .skill {
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
   color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 8px;
-  width: 5.9rem;
-  height: 5.9rem;
+  padding: 4px;
+  width: 5.8rem;
+  height: 5.8rem;
   transition: all 0.5s;
 
   @media screen and (max-width: 600px) {
@@ -76,9 +75,10 @@ defineProps<{
     color: $secondary-color;
     z-index: 1;
   }
+
   &:hover {
-    background: rgba($primary-color, 0.7);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+    background: rgba($primary-color, 0.9);
+    box-shadow: 0 4px 40px rgba(255, 255, 255, 0.5);
     color: $black;
     scale: 1.15;
   }
@@ -87,7 +87,7 @@ defineProps<{
     background: rgba($primary-color, 0.3);
   }
   &:hover::before {
-    background: rgba($primary-color, 0.5);
+    background: rgba($primary-color, 0.6);
   }
 }
 </style>
