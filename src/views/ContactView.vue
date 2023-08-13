@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
+import { ENGLISH_CV_LINK, FRENCH_CV_LINK, MY_EMAIL } from "../constants";
 </script>
 
 <template>
@@ -25,14 +25,14 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK } from "../constants";
       </a>
       <a
         class="link link--fancy mail-resume__link"
-        href="mailto:clm.roig@gmail.com"
+        href="mailto:{{ MY_EMAIL }}"
       >
         <font-awesome-icon
           class="contact__icon"
           size="2xl"
           :icon="['fa-regular', 'envelope']"
         ></font-awesome-icon>
-        <p>clm.roig@gmail.com</p>
+        <p>{{ MY_EMAIL }}</p>
       </a>
     </div>
 

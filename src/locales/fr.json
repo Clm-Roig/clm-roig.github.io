@@ -120,6 +120,8 @@
   "back-to-projects": "Revenir à la liste des projets",
   "built-using": "Site développé en utilisant {vueLink}, {sassLink} et {vueI18nLink}",
   "change-language:": "Changer de langue :",
+  "copy-email": "Copier l'email",
+  "email-is-copied": "Copié !",
   "features": "fonctionnalités",
   "notifications": "notifications",
   "presentation": "présentation",

@@ -1,5 +1,15 @@
 <script setup lang="ts">
+import { ref } from "vue";
+import { MY_EMAIL } from "../constants";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
+
+const isEmailCopied = ref(false);
+
+function copyEmail() {
+  navigator.clipboard.writeText(MY_EMAIL);
+  isEmailCopied.value = true;
+  setTimeout(() => (isEmailCopied.value = false), 2000);
+}
 </script>
 
 <template>
@@ -9,9 +19,22 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
       <div class="side-bar--left__locale-changer">
         <LanguageSwitcher />
       </div>
-      <a class="link side-bar__link" href="mailto:clm.roig@gmail.com"
-        >clm.roig@gmail.com</a
-      >
+      <a class="link side-bar__link" href="mailto:{{MY_EMAIL}}">{{
+        MY_EMAIL
+      }}</a>
+      &nbsp;
+      <div class="side-bar__copy-email">
+        <button class="side-bar__copy-email-btn" @click="copyEmail">
+          <font-awesome-icon
+            size="m"
+            :icon="['fa-regular', 'copy']"
+            rota
+          ></font-awesome-icon>
+        </button>
+        <p class="side-bar__copy-email-text">
+          {{ isEmailCopied ? $t("email-is-copied") + "🎉" : $t("copy-email") }}
+        </p>
+      </div>
     </div>
 
     <div class="side-bar side-bar--right">
@@ -156,6 +179,31 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
     color: $primary-color;
     background-color: inherit;
     transform: translateX(-4px);
+  }
+
+  &__copy-email {
+    position: relative;
+  }
+
+  &__copy-email-btn {
+    padding: 4px;
+    rotate: 180deg;
+    z-index: 2;
+  }
+
+  &__copy-email-btn:hover + &__copy-email-text {
+    right: 32px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__copy-email-text {
+    position: absolute;
+    right: -150px;
+    top: -2px;
+    transition: all 0.5s ease-in-out;
+    rotate: 180deg;
+    white-space: nowrap;
+    writing-mode: initial;
   }
 
   &--left {
