@@ -25,7 +25,7 @@ import { ENGLISH_CV_LINK, FRENCH_CV_LINK, MY_EMAIL } from "../constants";
       </a>
       <a
         class="link link--fancy mail-resume__link"
-        href="mailto:{{ MY_EMAIL }}"
+        :href="'mailto:' + MY_EMAIL"
       >
         <font-awesome-icon
           class="contact__icon"

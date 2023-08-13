@@ -19,7 +19,7 @@ function copyEmail() {
       <div class="side-bar--left__locale-changer">
         <LanguageSwitcher />
       </div>
-      <a class="link side-bar__link" href="mailto:{{MY_EMAIL}}">{{
+      <a class="link side-bar__link" :href="'mailto:' + MY_EMAIL">{{
         MY_EMAIL
       }}</a>
       &nbsp;
