@@ -193,14 +193,14 @@ function copyEmail() {
 
   &__copy-email-btn:hover + &__copy-email-text {
     right: 32px;
-    transition: all 0.5s ease-in-out;
+    transition: all $default-transition-duration ease-in-out;
   }
 
   &__copy-email-text {
     position: absolute;
     right: -150px;
     top: -2px;
-    transition: all 0.5s ease-in-out;
+    transition: all $default-transition-duration ease-in-out;
     rotate: 180deg;
     white-space: nowrap;
     writing-mode: initial;
