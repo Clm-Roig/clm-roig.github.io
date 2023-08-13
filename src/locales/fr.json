@@ -20,6 +20,12 @@
     "built-with:": "Développé avec :",
     "more-info": "en savoir +",
     "section-title": "Projets",
+    "batailLog": {
+      "title": "Batail-Log",
+      "description": "Batail-Log est un coordinateur logistique digital et innovant pour les chantiers. Elle coordonne les intervenants de la chaîne logistique chantier à l’aide d'une application web, afin de gagner en productivité et en efficience et ainsi sécuriser les délais de livraison des chantiers.",
+      "details": {},
+      "images": {}
+    },
     "suivie": {
       "title": "SuiVie",
       "description": "SuiVie est une application web inspirée de l'outil de suivi d'habitudes d'un bullet journal. Elle a pour but de suivre vos habitudes comme le sport, la nourriture, l'hygiène, les soins personnels, les dépenses... Même si elle fonctionne sur ordinateur, elle est conçue pour les appareils mobiles. Je travaille seul sur ce projet.",

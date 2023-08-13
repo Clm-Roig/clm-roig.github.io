@@ -2,13 +2,24 @@
 import ProjectItem from "../components/ProjectItem.vue";
 import { projects } from "@/models/projects";
 
-const { suivie, grottocenter, mizk } = projects;
+const { suivie, grottocenter, mizk, batailLog } = projects;
 </script>
 
 <template>
   <h2>{{ $t("projects.section-title") }}</h2>
 
   <ul class="projects">
+    <ProjectItem
+      :built-with="batailLog.builtWith"
+      :description="$t('projects.batailLog.description')"
+      :img-path="batailLog.imgPath"
+      __comment="TODO: uncomment internal slug
+    when dedicated page done"
+      __internal-slug="batailLog.internalSlug"
+      :title="$t('projects.batailLog.title')"
+      :url="batailLog.url"
+      :right-img="true"
+    />
     <ProjectItem
       :built-with="suivie.builtWith"
       :description="$t('projects.suivie.description')"

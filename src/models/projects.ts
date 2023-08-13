@@ -1,4 +1,10 @@
 export const projects = {
+  batailLog: {
+    builtWith: "React - TypeScript - MUI ｜ Express - Strapi - MongoDB",
+    imgPath: "batail-log.jpg",
+    internalSlug: "batail-log",
+    url: "https://www.batail-log.com/",
+  },
   suivie: {
     builtWith: "React - TypeScript - MUI - Recharts - Redux - Cypress - Jest",
     imgPath: "suivie.jpg",

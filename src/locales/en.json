@@ -20,6 +20,12 @@
     "built-with:": "Built with:",
     "more-info": "learn more",
     "section-title": "Projects",
+    "batailLog": {
+      "title": "Batail-Log",
+      "description": "Batail-Log is an innovative digital logistics coordinator for construction sites. Batail-Log uses a web application to coordinate all players in the site logistics chain in order to increase productivity and efficiency and secure delivery times.",
+      "details": {},
+      "images": {}
+    },
     "suivie": {
       "title": "SuiVie",
       "description": "SuiVie is a web application inspired by the Bullet Journal's trackers tool. It aims to track your habits like sports, food, hygiene, self-care, expenses... Even if it works on desktop, it is designed for mobile devices. I work alone on this project.",
