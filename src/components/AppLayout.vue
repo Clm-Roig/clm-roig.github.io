@@ -25,11 +25,7 @@ function copyEmail() {
       &nbsp;
       <div class="side-bar__copy-email">
         <button class="side-bar__copy-email-btn" @click="copyEmail">
-          <font-awesome-icon
-            size="m"
-            :icon="['fa-regular', 'copy']"
-            rota
-          ></font-awesome-icon>
+          <font-awesome-icon :icon="['fa-regular', 'copy']"></font-awesome-icon>
         </button>
         <p class="side-bar__copy-email-text">
           {{ isEmailCopied ? $t("email-is-copied") + "🎉" : $t("copy-email") }}

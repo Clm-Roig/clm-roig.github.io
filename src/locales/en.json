@@ -127,6 +127,7 @@
   "built-using": "Website built using {vueLink}, {sassLink} and {vueI18nLink}",
   "change-language:": "Change language:",
   "copy-email": "Copy email",
+  "email-is-copied": "Copied !",
   "notifications": "notifications",
   "features": "features",
   "presentation": "presentation",
