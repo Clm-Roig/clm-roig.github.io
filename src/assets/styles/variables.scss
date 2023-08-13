@@ -1,7 +1,7 @@
 $black: #091316;
 $white: #f7fff7;
 $text-color: $white;
-$background-color: $black;
+$background-color: lighten($black, 5%);
 
 $primary-color: #67b654;
 $primary-color-light: lighten($primary-color, 15%);
