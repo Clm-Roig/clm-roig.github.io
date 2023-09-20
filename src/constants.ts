@@ -3,4 +3,4 @@ export const FRENCH_CV_LINK =
 export const ENGLISH_CV_LINK =
   "https://drive.google.com/file/d/1yHYvjCSsr0H4y-Od5tqUgFVGMwfndJs0/view?usp=sharing";
 
-export const MY_EMAIL = import.meta.env.VUE_APP_MY_EMAIL ?? "secret@email.com";
+export const MY_EMAIL = "clm.roig@gmail.com";
