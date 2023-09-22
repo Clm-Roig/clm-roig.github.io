@@ -16,7 +16,6 @@ See [Development guide](https://github.com/Clm-Roig/clm-roig.github.io/wiki/Deve
 
 The `main` branch is automatically deployed using a Github Action.
 
-
 ## This project uses
 
 ![vue logo](https://user-images.githubusercontent.com/20704943/194746416-547ba9ed-6433-44ac-92c1-3b048938fa2d.png)
