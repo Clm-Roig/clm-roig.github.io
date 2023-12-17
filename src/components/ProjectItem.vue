@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ProjectType } from "@/models/ProjectType";
 import Card from "./Card.vue";
 
 defineProps<{
@@ -6,6 +7,7 @@ defineProps<{
   description: string;
   imgPath: string;
   internalSlug?: string;
+  projectType: ProjectType;
   rightImg?: boolean;
   title: string;
   url?: string;
@@ -28,6 +30,13 @@ defineProps<{
               <button>{{ $t("projects.more-info") }}</button>
             </router-link>
           </div>
+          <h5 class="project__sub-title">
+            {{
+              projectType === ProjectType.MISSION
+                ? $t("mission")
+                : $t("personalProject")
+            }}
+          </h5>
           <p>
             {{ description }}
           </p>
@@ -65,9 +74,17 @@ $breakpoint: 820px;
     align-items: flex-start;
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 16px;
   }
   &__title {
+    width: fit-content;
+    margin-bottom: 4px;
+  }
+  &__sub-title {
+    background-color: $primary-color;
+    color: $black;
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
     width: fit-content;
   }
   &__more-info {

@@ -3,12 +3,12 @@ import { SkillCategories } from "@/models/SkillCategories";
 export const skills = [
   { name: "React", level: 4, category: SkillCategories.FRONT_END },
   { name: "MUI", level: 4, category: SkillCategories.FRONT_END },
-  { name: "CSS 3", level: 4, category: SkillCategories.FRONT_END },
-  { name: "HTML 5", level: 3, category: SkillCategories.FRONT_END },
+  { name: "HTML5 CSS3", level: 4, category: SkillCategories.FRONT_END },
 
   { name: "Vue.js", level: 1, category: SkillCategories.FRONT_END },
   { name: "SCSS", level: 2, category: SkillCategories.FRONT_END },
   { name: "BEM", level: 2, category: SkillCategories.FRONT_END },
+  { name: "Next.js", level: 1, category: SkillCategories.FRONT_END },
   { name: "Framer", level: 1, category: SkillCategories.FRONT_END },
 
   { name: "Github Actions", level: 3, category: SkillCategories.TEST_CI },

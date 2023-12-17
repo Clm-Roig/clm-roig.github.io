@@ -20,6 +20,12 @@
     "built-with:": "Développé avec :",
     "more-info": "en savoir +",
     "section-title": "Projets",
+    "larsenToulousaine": {
+      "title": "Larsen Toulousaine",
+      "description": "Agenda des concerts metal à Toulouse. Je souhaitais site agréger toutes les annonces de concerts dispersées au quatre coins du web sur un seul site, clair, lisible et ergonomique.",
+      "details": {},
+      "images": {}
+    },
     "batailLog": {
       "title": "Batail-Log",
       "description": "Batail-Log est un coordinateur logistique digital et innovant pour les chantiers. Elle coordonne les intervenants de la chaîne logistique chantier à l’aide d'une application web, afin de gagner en productivité et en efficience et ainsi sécuriser les délais de livraison des chantiers.",
@@ -129,7 +135,9 @@
   "copy-email": "Copier l'email",
   "email-is-copied": "Copié !",
   "features": "fonctionnalités",
+  "mission": "mission",
   "notifications": "notifications",
+  "personalProject": "projet personnel",
   "presentation": "présentation",
   "technical-overview": "description technique",
   "test-setup": "Ajout de tests",

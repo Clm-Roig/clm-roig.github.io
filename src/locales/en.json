@@ -20,6 +20,12 @@
     "built-with:": "Built with:",
     "more-info": "learn more",
     "section-title": "Projects",
+    "larsenToulousaine": {
+      "title": "Larsen Toulousaine",
+      "description": "Diary of metal concerts in Toulouse. I wanted to bring together all the gig listings scattered across the web on a single, clear, easy-to-read and user-friendly site.",
+      "details": {},
+      "images": {}
+    },
     "batailLog": {
       "title": "Batail-Log",
       "description": "Batail-Log is an innovative digital logistics coordinator for construction sites. Batail-Log uses a web application to coordinate all players in the site logistics chain in order to increase productivity and efficiency and secure delivery times.",
@@ -128,7 +134,9 @@
   "change-language:": "Change language:",
   "copy-email": "Copy email",
   "email-is-copied": "Copied !",
+  "mission": "mission",
   "notifications": "notifications",
+  "personalProject": "personnal project",
   "features": "features",
   "presentation": "presentation",
   "technical-overview": "technical overview",
